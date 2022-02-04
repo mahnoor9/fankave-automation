@@ -5,7 +5,7 @@ import {
     startRecordingButton,
     stopRecordingButton,
     bodyClick
-} from "../locators.ts/recordVideo.locators";
+} from "../locators/recordVideo.locators";
 
 export async function selectVideo(page: Page) {
     await page.locator(selectVideoButton).click()

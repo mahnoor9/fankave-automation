@@ -1,15 +1,18 @@
-import  {Page}  from "@playwright/test";
+import type { Page } from "@playwright/test";
 import {
     approveButton,
-    selectAudioButton,
+    selectVideoButton,
     startRecordingButton,
-    stopRecordingButton
-} from "../locators.ts/recordAudio.locators";
+    stopRecordingButton,
+    bodyClick
+} from "../locators.ts/recordVideo.locators";
 
-export async function selectAudio(page: Page) {
-    await page.locator(selectAudioButton).click()
+export async function selectVideo(page: Page) {
+    await page.locator(selectVideoButton).click()
 }
-
+export async function pageClick(page: Page) {
+    await page.locator(bodyClick).click()
+}
 export async function startRecording(page: Page) {
     await page.locator(startRecordingButton).click()
 }
@@ -25,5 +28,5 @@ export async function approveRecording(page: Page) {
     ]);
     console.log(await response.json());
    // console.log(JSON.stringify(response.body()))
-    return JSON.stringify(response.json());
+    return JSON.stringify(await response.json());
 }

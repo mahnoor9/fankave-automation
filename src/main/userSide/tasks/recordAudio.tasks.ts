@@ -8,7 +8,3 @@ export async function recordAudio(page: Page) {
    await stopRecording(page);
   await approveRecording(page);
   }
-  export async function recordVideo(page: Page) {
-   
-
-}

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test --browser=chromium --headed"
+    "test": "npx playwright test"
   },
-  "author": "MAH NOOR",
+  "author": "MAH NOOR, SAAD KHAN",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/mahnoor9/fankave-automation#readme",
   "description": "",
+  "dependencies": {
+    "@playwright/test": "^1.18.1",
+    "@types/jest": "^27.4.0",
+    "playwright": "^1.18.1"
+  },
   "dependencies": {
     "@playwright/test": "^1.18.1",
     "@types/jest": "^27.4.0",

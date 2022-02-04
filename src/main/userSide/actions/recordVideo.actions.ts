@@ -14,6 +14,7 @@ export async function pageClick(page: Page) {
     await page.locator(bodyClick).click()
 }
 export async function startRecording(page: Page) {
+    await page.keyboard.press('Tab')
     await page.locator(startRecordingButton).click()
 }
 export async function stopRecording(page: Page) {

@@ -3,7 +3,6 @@ import { approveRecording, pageClick, selectVideo, startRecording, stopRecording
 
 export async function recordVideo(page: Page) {
    await selectVideo(page);
-   //await pageClick(page);
    await startRecording(page);
    await page.waitForTimeout(10000)
    await stopRecording(page);

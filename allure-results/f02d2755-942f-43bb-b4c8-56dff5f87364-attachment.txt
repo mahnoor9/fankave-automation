@@ -1,0 +1,6 @@
+keyboard.press: Target page, context or browser has been closed
+    at capturePhoto (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskPhoto.actions.ts:15:25)
+    at autodeskPhototask (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskPhoto.tasks.ts:10:10)
+    at C:\Users\Emumba\fankave-automation\src\test\a.test.ts:28:22 {
+  name: [32m'Error'[39m
+}

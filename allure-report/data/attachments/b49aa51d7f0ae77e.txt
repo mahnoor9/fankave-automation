@@ -1,0 +1,9 @@
+locator.click: Target closed
+=========================== logs ===========================
+waiting for selector "#fk-name"
+============================================================
+    at nameFeild (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskPhoto.actions.ts:23:35)
+    at autodeskPhototask (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskPhoto.tasks.ts:14:10)
+    at C:\Users\Emumba\fankave-automation\src\test\test.ts:28:22 {
+  name: [32m'Error'[39m
+}

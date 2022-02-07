@@ -9,12 +9,13 @@ import { devices, PlaywrightTestConfig } from '@playwright/test';
     
 //   },
 // };
+// playwright.config.ts
 const config: PlaywrightTestConfig = {
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] , permissions: ['microphone','camera'], headless: false}
+      use: { ...devices['Desktop Chrome'] , permissions: ['microphone','camera'], headless: false, screenshot:"on", trace:"retain-on-failure"},
     }]
-
+    , reporter:[ [ 'experimental-allure-playwright' ],]
 };
 export default config;

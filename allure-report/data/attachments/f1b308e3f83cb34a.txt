@@ -1,0 +1,9 @@
+locator.click: Target closed
+=========================== logs ===========================
+waiting for selector "div.fk-buttons-wrapper > button"
+============================================================
+    at capturePhoto (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskPhoto.actions.ts:17:39)
+    at autodeskPhototask (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskPhoto.tasks.ts:10:10)
+    at C:\Users\Emumba\fankave-automation\src\test\test.ts:28:22 {
+  name: [32m'Error'[39m
+}

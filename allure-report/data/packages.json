@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Should capture a photo",
+    "uid" : "e4cbe42bdc3757b9",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644215640560,
+      "stop" : 1644215661173,
+      "duration" : 20613
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 9,
+    "retriesStatusChange" : true,
+    "parameters" : [ ]
+  } ]
+}

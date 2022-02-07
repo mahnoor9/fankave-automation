@@ -1,0 +1,74 @@
+{
+  "uid" : "90eb242451d41109",
+  "name" : "Should capture a photo",
+  "fullName" : "Should capture a photo",
+  "historyId" : "chromium src\\test\\test.ts Should capture a photo",
+  "time" : {
+    "start" : 1644213090875,
+    "stop" : 1644213111760,
+    "duration" : 20885
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4c901f7f5d73d47",
+      "name" : "screenshot",
+      "source" : "4c901f7f5d73d47.png",
+      "type" : "image/png",
+      "size" : 185564
+    }, {
+      "uid" : "be05e44fc729c729",
+      "name" : "stdout",
+      "source" : "be05e44fc729c729.txt",
+      "type" : "text/plain",
+      "size" : 91
+    }, {
+      "uid" : "fe28d5f1e856d422",
+      "name" : "stdout",
+      "source" : "fe28d5f1e856d422.txt",
+      "type" : "text/plain",
+      "size" : 69
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "src\\test\\test.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "90eb242451d41109.json",
+  "parameterValues" : [ ]
+}

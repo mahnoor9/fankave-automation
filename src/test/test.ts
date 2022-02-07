@@ -23,14 +23,14 @@ import { autodeskUploadtask } from '../main/userSide/content.creation/tasks/auto
   //      console.log(autoVideo)
   //     });
 
-  // test('Should capture a photo', async ({ page }) => {
-  //   await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
-  //    let autoPhoto = await autodeskPhototask(page);
-  //    console.log(autoPhoto)
-  //   });
-
-  test('Should Upload a photo', async ({ page }) => {
+  test('Should capture a photo', async ({ page }) => {
     await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
-     let autoImage = await autodeskUploadtask(page);
-     console.log(autoImage)
+     let autoPhoto = await autodeskPhototask(page);
+     console.log(autoPhoto)
     });
+
+  // test('Should Upload a photo', async ({ page }) => {
+  //   await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
+  //    let autoImage = await autodeskUploadtask(page);
+  //    console.log(autoImage)
+  //   });

@@ -1,0 +1,11 @@
+[ {
+  "uid" : "e4cbe42bdc3757b9",
+  "name" : "Should capture a photo",
+  "time" : {
+    "start" : 1644215640560,
+    "stop" : 1644215661173,
+    "duration" : 20613
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,21 @@
+{
+  "chromium src\\test\\test.ts Should capture a photo" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e4cbe42bdc3757b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644215640560,
+        "stop" : 1644215661173,
+        "duration" : 20613
+      }
+    } ]
+  }
+}

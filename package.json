@@ -21,5 +21,9 @@
     "@playwright/test": "^1.18.1",
     "@types/jest": "^27.4.0",
     "playwright": "^1.18.1"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.17.2",
+    "experimental-allure-playwright": "^0.0.3"
   }
 }

@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "chromium",
+    "children" : [ {
+      "name" : "src\\test\\test.ts",
+      "children" : [ {
+        "name" : "Should capture a photo",
+        "uid" : "e4cbe42bdc3757b9",
+        "parentUid" : "b72118a8cfd2f064f5bd27a30dfc1507",
+        "status" : "passed",
+        "time" : {
+          "start" : 1644215640560,
+          "stop" : 1644215661173,
+          "duration" : 20613
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 9,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b72118a8cfd2f064f5bd27a30dfc1507"
+    } ],
+    "uid" : "36c900977e1d8b81a2c6893cc82bfc01"
+  } ]
+}

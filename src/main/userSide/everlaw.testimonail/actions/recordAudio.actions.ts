@@ -20,12 +20,11 @@ export async function stopRecording(page: Page) {
     await page.click(stopRecordingButton)
 }
 export async function approveRecording(page: Page) {
-    const [response] = await Promise.all([
+    const [response] : any= await Promise.all([
         page.waitForResponse(`https://dev.api.fankave.com/cmsx/stories/testimonialmvp/publish`
 
         ),
         page.click(approveButton),
     ]);
-    console.log(await response.json());
-    return JSON.stringify(response.json());
+    return (await response.json());
 }

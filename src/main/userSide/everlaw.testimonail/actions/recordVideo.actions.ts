@@ -29,5 +29,5 @@ export async function approveRecording(page: Page) {
     ]);
     console.log(await response.json());
    // console.log(JSON.stringify(response.body()))
-    return JSON.stringify(await response.json());
+    return await response.json();
 }

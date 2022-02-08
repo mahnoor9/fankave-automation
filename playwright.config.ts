@@ -14,7 +14,9 @@ const config: PlaywrightTestConfig = {
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] , permissions: ['microphone','camera'], headless: false, screenshot:"on", trace:"retain-on-failure"},
+      use: { ...devices['Desktop Chrome'] , permissions: ['microphone','camera'], headless: false, launchOptions:{args: ['--disable-web-security', '--allow-running-insecure-content' ]}}
+    
+      
     }]
     , reporter:[ [ 'experimental-allure-playwright' ],]
 };

@@ -5,4 +5,4 @@ export let continueButton = 'div.actions > button';
 export let enterName = '#fk-name';
 export let enterEmail = '#fk-email';
 export let approveButton = 'div.actions > button';
-export let filepath = 'src/testdata/Test_image.jpg';
+export let filepath = 'src\main\testdata\Test_image.jpg'; 

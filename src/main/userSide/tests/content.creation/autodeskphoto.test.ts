@@ -1,5 +1,5 @@
 // import { test, expect, Page, chromium, firefox } from '@playwright/test';
-// import { autodeskPhototask } from '../tasks/autodeskPhoto.tasks'
+// import { autodeskPhototask } from "../../content.creation/tasks/autodeskPhoto.tasks"
 
 // test('Should capture a photo', async ({ page }) => {
 //   await page.goto('https://dev.ccapps.fankave.com/contentcreation/');

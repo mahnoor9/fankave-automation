@@ -1,5 +1,5 @@
 // import { test, expect, Page, chromium, firefox } from '@playwright/test';
-// import { autodeskVideotask } from '../tasks/autodeskVideo.tasks';
+// import { autodeskVideotask } from '../../content.creation/tasks/autodeskVideo.tasks';
 
 // test('Should create a video', async ({ page }) => {
 //   await page.goto('https://dev.ccapps.fankave.com/contentcreation/');

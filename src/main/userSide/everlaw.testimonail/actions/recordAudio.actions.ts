@@ -4,7 +4,7 @@ import {
     selectAudioButton,
     startRecordingButton,
     stopRecordingButton
-} from "../locators.ts/recordAudio.locators";
+} from "../locators/recordAudio.locators";
 
 export async function selectAudio(page: Page) {
     await page.locator(selectAudioButton).click()

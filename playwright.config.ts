@@ -9,6 +9,7 @@ import { devices, PlaywrightTestConfig } from '@playwright/test';
     
 //   },
 // };
+// playwright.config.ts
 const config: PlaywrightTestConfig = {
   projects: [
     {
@@ -17,6 +18,6 @@ const config: PlaywrightTestConfig = {
     
       
     }]
-
+    , reporter:[ [ 'experimental-allure-playwright' ],]
 };
 export default config;

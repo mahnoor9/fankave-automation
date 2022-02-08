@@ -1,0 +1,68 @@
+{
+  "uid" : "d141486753ce8189",
+  "name" : "Should capture a photo",
+  "fullName" : "Should capture a photo",
+  "historyId" : "chromium src\\test\\test.ts Should capture a photo",
+  "time" : {
+    "start" : 1644215576910,
+    "stop" : 1644215586732,
+    "duration" : 9822
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f1b308e3f83cb34a",
+      "name" : "stdout",
+      "source" : "f1b308e3f83cb34a.txt",
+      "type" : "text/plain",
+      "size" : 564
+    }, {
+      "uid" : "86490b48a332f479",
+      "name" : "stdout",
+      "source" : "86490b48a332f479.txt",
+      "type" : "text/plain",
+      "size" : 20
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "src\\test\\test.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d141486753ce8189.json",
+  "parameterValues" : [ ]
+}

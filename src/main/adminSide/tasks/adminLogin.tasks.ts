@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
 import waitTillHTMLRendered from "../../utils/waitTillHTMLRendered";
-import { clickEmailNext, clickPasswordNext, ClickSignInWithGoogle, enterEmail, enterPassword, enterRecoveryEmail, isLoggedIn, pressEnter } from "../actions/adminLogin"
+import { clickEmailNext, clickPasswordNext, ClickSignInWithGoogle, enterEmail, enterPassword, isLoggedIn, pressEnter } from "../actions/adminLogin"
 
 
 export async function googleSignIn(page: Page) {

@@ -15,8 +15,6 @@ export async function pageClick(page: Page) {
 }
 export async function startRecording(page: Page) {
     await page.keyboard.press('Tab')
-    await page.keyboard.press('Tab')
-    await page.keyboard.press('Enter')
     await page.locator(startRecordingButton).click()
 }
 export async function stopRecording(page: Page) {
@@ -31,5 +29,5 @@ export async function approveRecording(page: Page) {
     ]);
     console.log(await response.json());
    // console.log(JSON.stringify(response.body()))
-    return JSON.stringify(await response.json());
+    return await response.json();
 }

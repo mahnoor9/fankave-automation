@@ -11,19 +11,20 @@ export async function selectAudio(page: Page) {
 }
 
 export async function startRecording(page: Page) {
-    await page.locator(startRecordingButton).click()
+    await page.keyboard.press('Tab')
+    await page.keyboard.press('Tab')
+   await page.keyboard.press('Enter')
+  await page.click(startRecordingButton)
 }
 export async function stopRecording(page: Page) {
-    await page.locator(stopRecordingButton).click()
+    await page.click(stopRecordingButton)
 }
 export async function approveRecording(page: Page) {
-    const [response]= await Promise.all([
+    const [response] : any= await Promise.all([
         page.waitForResponse(`https://dev.api.fankave.com/cmsx/stories/testimonialmvp/publish`
-           
+
         ),
         page.click(approveButton),
     ]);
-    console.log(await response.json());
-   // console.log(JSON.stringify(response.body()))
-    return JSON.stringify(response.json());
+    return (await response.json());
 }

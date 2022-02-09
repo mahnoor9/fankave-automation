@@ -1,0 +1,13 @@
+{
+    "userSide": {
+        "URL": "",
+        "FirstName": "",
+        "LastName": ""
+    },
+    "adminSide": {
+        "URL": "",
+        "email": "",
+        "password": "",
+        "searchString": ""
+    }
+}

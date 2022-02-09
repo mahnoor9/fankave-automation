@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import { approveRecording, pageClick, selectVideo, startRecording, stopRecording } from "../actions/recordVideo.actions";
+import { approveRecording, selectVideo, startRecording, stopRecording } from "../actions/recordVideo.actions";
 
 export async function recordVideo(page: Page) {
    await selectVideo(page);

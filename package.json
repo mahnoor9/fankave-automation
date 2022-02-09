@@ -3,9 +3,20 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test_Everlaw ": "npx playwright test everlawE2E.test.ts",
-    "test_AutodeskIT ": "npx playwright test content.creationE2E.test.ts"
+
+    "test": "npx playwright test",
+
+     "test_E2E_Everlaw ": "npx playwright test everlawE2E.test.ts && npx allure serve",
+         "test_Audio_Everlaw" : "npx playwright test everlaw.audio.test.ts && npx allure serve",
+         "test_Video_Everlaw" : "npx playwright test everlaw.video.test.ts && npx allure serve",
+
+    " test_E2E_AutodeskIT ": "npx playwright test content.creationE2E.test.ts && npx allure serve",
+         "test_Photo_AutodeskIT": "npx playwright test autodesk.photo.test.ts && npx allure serve",
+         "test_Upload_AutodeskIT": "npx playwright test autodesk.upload.test.ts && npx allure serve",
+         "test_video_AutodeskIT": "npx playwright test autodesk.video.test.ts && npx allure serve"
+        
   },
+
   "author": "MAH NOOR, SAAD KHAN",
   "license": "ISC",
   "repository": {

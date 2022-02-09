@@ -1,0 +1,7 @@
+{
+  msg: [32m'File upload successful'[39m,
+  data: {
+    id: [32m'6897103126067683440'[39m,
+    mediaUrl: [32m'https://storage.googleapis.com/devcmsxcontent/testimonialmvp/audios/6897103126067683440.weba'[39m
+  }
+}

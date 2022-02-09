@@ -1,0 +1,9 @@
+page.waitForSelector: Target closed
+=========================== logs ===========================
+waiting for selector "div.appcontainer" to be visible
+============================================================
+    at clearSearchField (D:\fankave-automation\src\main\adminSide\actions\adminSearch.actions.ts:5:16)
+    at searchTestimonial (D:\fankave-automation\src\main\adminSide\tasks\adminSearch.task.ts:8:15)
+    at D:\fankave-automation\src\test\test.ts:29:9 {
+  name: [32m'Error'[39m
+}

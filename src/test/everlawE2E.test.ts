@@ -1,9 +1,8 @@
 import { test, expect, Page, chromium, firefox } from '@playwright/test';
-import { isLoggedIn } from '../main/adminSide/actions/adminLogin';
 import { googleSignIn } from '../main/adminSide/tasks/adminLogin.tasks';
 import { searchTestimonial } from '../main/adminSide/tasks/adminSearch.task';
 import { recordAudio } from '../main/userSide/tasks/recordAudio.tasks';
-import { recordVideo } from '../main/userSide/tasks/recordVideo.task';
+import { recordVideo } from '../main/userSide/everlaw.testimonail/tasks/recordVideo.task';
 
 let createdAudioID = ''
 let createdVideoId =''

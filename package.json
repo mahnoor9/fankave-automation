@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test"
+    "test_Everlaw ": "npx playwright test everlawE2E.test.ts",
+    "test_AutodeskIT ": "npx playwright test content.creationE2E.test.ts"
   },
   "author": "MAH NOOR, SAAD KHAN",
   "license": "ISC",

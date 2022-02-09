@@ -31,5 +31,5 @@ export async function approveImage(page: Page) {
         page.click(approveButton),
     ]);
     console.log(await response.json());
-    return JSON.stringify(await response.json());
+    return (await response.json());
 }

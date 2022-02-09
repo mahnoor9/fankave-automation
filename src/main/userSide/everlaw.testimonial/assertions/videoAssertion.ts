@@ -1,85 +1,57 @@
 import {expect, Page} from '@playwright/test';
 import { selectVideo, startRecording, stopRecording } from "../actions/recordVideo.actions"
 
-export async function selectvideoButton(page: Page) {
+export async function selectvideoButtoncheck(page: Page) {
 
-    try {
-    const uploadBtn = await page.$(`text=RECORD VIDEO`);
-    const confirm = await uploadBtn.isEnabled();
+    const Btn = await page.$(`text=RECORD VIDEO`);
+    const confirm = await Btn.isEnabled();
     expect (confirm).toBeTruthy();
-    const visibility = await uploadBtn.isVisible();
+    const visibility = await Btn.isVisible();
     expect (visibility).toBeTruthy();
     }
-    catch(e){
-    console.log(e)
-}};
 
-export async function recordButton(page: Page) {
-
-    try {
-    await selectVideo(page);
-    await page.waitForTimeout(1000)    
-    const uploadBtn = await page.$(`button.record-button`);
-    const confirm = await uploadBtn.isEnabled();
+export async function recordButtoncheck(page: Page) {
+    
+    const Btn = await page.$(`div.css-bbq5bh > button`);
+    const confirm = await Btn.isEnabled();
     expect (confirm).toBeTruthy();
-    const visibility = await uploadBtn.isVisible();
+    const visibility = await Btn.isVisible();
     expect (visibility).toBeTruthy();
     }
-    catch(e){
-    console.log(e)
-}};
 
-export async function stoprecordButton(page: Page) {
+export async function stoprecordButtoncheck(page: Page) {
 
-    try {
-    await selectVideo(page);
-    await page.waitForTimeout(1000)
-    await startRecording(page);
-    await page.waitForTimeout(1000)
-    const uploadBtn = await page.$(`button.stop-recording-button`);
-    const confirm = await uploadBtn.isEnabled();
+    const Btn = await page.$(`div > button`);
+    const confirm = await Btn.isEnabled();
     expect (confirm).toBeTruthy();
-    const visibility = await uploadBtn.isVisible();
+    const visibility = await Btn.isVisible();
     expect (visibility).toBeTruthy();
     }
-    catch(e){
-    console.log(e)
-}};
 
-export async function retakeButton(page: Page) {
+export async function retakeButtoncheck(page: Page) {
 
-    try {
-    await selectVideo(page);
-    await page.waitForTimeout(1000)
-    await startRecording(page);
-    await page.waitForTimeout(10000)
-    await stopRecording(page);
-    await page.waitForTimeout(1000)
-    const uploadBtn = await page.$(`figure > button`);
-    const confirm = await uploadBtn.isEnabled();
+    const Btn = await page.$(`figure > button`);
+    const confirm = await Btn.isEnabled();
     expect (confirm).toBeTruthy();
-    const visibility = await uploadBtn.isVisible();
+    const visibility = await Btn.isVisible();
     expect (visibility).toBeTruthy();
     }
-    catch(e){
-    console.log(e)
-}};
 
-export async function approveButton(page: Page) {
+export async function approveButtoncheck(page: Page) {
 
-    try {
-    await selectVideo(page);
-    await page.waitForTimeout(1000)
-    await startRecording(page);
-    await page.waitForTimeout(10000)
-    await stopRecording(page);
-    await page.waitForTimeout(1000)
-    const uploadBtn = await page.$(`button.approve-button.false`);
-    const confirm = await uploadBtn.isEnabled();
+    const Btn = await page.$(`article.button-wrapper > button`);
+    const confirm = await Btn.isEnabled();
     expect (confirm).toBeTruthy();
-    const visibility = await uploadBtn.isVisible();
+    const visibility = await Btn.isVisible();
     expect (visibility).toBeTruthy();
+
+}
+
+export async function thankyouMessegecheck(page: Page) {
+
+    const thankyouMessege = await page.$(`#fk-thankyou-screen > h2`);
+    const textcheck = await thankyouMessege.innerText();
+    const actualtext = textcheck.toLowerCase();
+    expect(actualtext).toContain('thank you')
     }
-    catch(e){
-    console.log(e)
-}};
+

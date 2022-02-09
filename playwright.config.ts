@@ -16,6 +16,6 @@ const config: PlaywrightTestConfig = {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] , permissions: ['microphone','camera'], headless: false, screenshot:"on", trace:"retain-on-failure"},
     }]
-    , reporter:[ [ 'experimental-allure-playwright' ],]
+    , reporter:[[ 'experimental-allure-playwright' ]]
 };
 export default config;

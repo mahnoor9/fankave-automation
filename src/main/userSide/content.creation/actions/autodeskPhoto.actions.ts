@@ -13,6 +13,7 @@ export async function takePhoto(page: Page) {
 }
 export async function capturePhoto(page: Page) {
     await page.keyboard.press('Tab')
+    await page.waitForTimeout(1000);
     await page.keyboard.press('Tab')
     await page.locator(captureButton).click()
 }

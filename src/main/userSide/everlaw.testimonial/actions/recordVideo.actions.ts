@@ -4,22 +4,25 @@ import {
     selectVideoButton,
     startRecordingButton,
     stopRecordingButton,
-    bodyClick
 } from "../locators/recordVideo.locators";
 
 export async function selectVideo(page: Page) {
     await page.locator(selectVideoButton).click()
 }
-export async function pageClick(page: Page) {
-    await page.locator(bodyClick).click()
-}
-export async function startRecording(page: Page) {
+
+export async function tabfucntion(page: Page) {
     await page.keyboard.press('Tab')
+}
+
+export async function startRecording(page: Page) {
+    // await page.keyboard.press('Tab')
     await page.locator(startRecordingButton).click()
 }
+
 export async function stopRecording(page: Page) {
     await page.locator(stopRecordingButton).click()
 }
+
 export async function approveRecording(page: Page) {
     const [response]= await Promise.all([
         page.waitForResponse(`https://dev.api.fankave.com/cmsx/stories/testimonialmvp/publish`

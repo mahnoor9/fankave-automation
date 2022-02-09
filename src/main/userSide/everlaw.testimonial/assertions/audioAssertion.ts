@@ -1,65 +1,45 @@
 import {expect, Page} from '@playwright/test';
-import { selectAudio, startRecording, stopRecording } from "../actions/recordAudio.actions"
 
-export async function selectaudioButton(page: Page) {
+export async function selectaudioButtoncheck(page: Page) {
 
-    try {
-    const uploadBtn = await page.$(`text=RECORD AUDIO`);
-    const confirm = await uploadBtn.isEnabled();
+    const Btn = await page.$(`text=RECORD AUDIO`);
+    const confirm = await Btn.isEnabled();
     expect (confirm).toBeTruthy();
-    const visibility = await uploadBtn.isVisible();
+    const visibility = await Btn.isVisible();
     expect (visibility).toBeTruthy();
     }
-    catch(e){
-    console.log(e)
-}};
 
-export async function recordButton(page: Page) {
+export async function recordButtoncheck(page: Page) {
 
-    try {
-    await selectAudio(page);
-    await page.waitForTimeout(2000)
-    const uploadBtn = await page.$(`Ellipse_2`);
-    const confirm = await uploadBtn.isEnabled();
+    const Btn = await page.$(`#Ellipse_2`);
+    const confirm = await Btn.isEnabled();
     expect (confirm).toBeTruthy();
-    const visibility = await uploadBtn.isVisible();
+    const visibility = await Btn.isVisible();
     expect (visibility).toBeTruthy();
     }
-    catch(e){
-    console.log(e)
-}};
 
-export async function stoprecordingButton(page: Page) {
+export async function stoprecordingButtoncheck(page: Page) {
 
-    try {
-    await selectAudio(page);
-    await page.waitForTimeout(2000)
-    await startRecording(page);
-    await page.waitForTimeout(10000)
-    const uploadBtn = await page.$(`button.stop-recording-button`);
-    const confirm = await uploadBtn.isEnabled();
+    const Btn = await page.$(`button.stop-recording-button`);
+    const confirm = await Btn.isEnabled();
     expect (confirm).toBeTruthy();
-    const visibility = await uploadBtn.isVisible();
+    const visibility = await Btn.isVisible();
     expect (visibility).toBeTruthy();
     }
-    catch(e){
-    console.log(e)
-}};
 
-export async function approveButton(page: Page) {
+export async function thankyouMessegecheck(page: Page) {
 
-    try {
-    await selectAudio(page);
-    await page.waitForTimeout(2000)
-    await startRecording(page);
-    await page.waitForTimeout(10000)
-    await stopRecording(page);    
-    const uploadBtn = await page.$(`button.approve-button.audio-approve-button`);
-    const confirm = await uploadBtn.isEnabled();
+    const thankyouMessege = await page.$(`#fk-thankyou-screen > h2`);
+    const textcheck = await thankyouMessege.innerText();
+    const actualtext = textcheck.toLowerCase();
+    expect(actualtext).toContain('thank you')
+    }
+
+export async function approveButtoncheck(page: Page) {
+  
+    const Btn = await page.$(`button.approve-button.audio-approve-button`);
+    const confirm = await Btn.isEnabled();
     expect (confirm).toBeTruthy();
-    const visibility = await uploadBtn.isVisible();
+    const visibility = await Btn.isVisible();
     expect (visibility).toBeTruthy();
     }
-    catch(e){
-    console.log(e)
-}};

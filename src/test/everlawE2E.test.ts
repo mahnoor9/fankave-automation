@@ -16,7 +16,7 @@ test('should add a new audio from the user side', async ({ page }) => {
 
 test('should add a new Video from the user side', async ({ page }) => {
   await page.goto('https://dev.ccapps.fankave.com/everlaw/testimonials/');
-   let recording:any = await recordVideo(page);
+   let recording: any = await recordVideo(page);
    createdVideoId = recording.data.id
    console.log(recording)
   });

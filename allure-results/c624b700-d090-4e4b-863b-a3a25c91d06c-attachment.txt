@@ -1,0 +1,6 @@
+page.waitForNavigation: Navigation failed because page was closed!
+=========================== logs ===========================
+waiting for navigation until "domcontentloaded"
+============================================================
+    at tweetAutodesk (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskTweet.task.ts:10:21)
+    at C:\Users\Emumba\fankave-automation\src\test\autodeskTweet.test.ts:12:19

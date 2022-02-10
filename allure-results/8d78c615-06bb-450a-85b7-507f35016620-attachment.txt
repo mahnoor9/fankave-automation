@@ -1,0 +1,9 @@
+locator.click: Target closed
+=========================== logs ===========================
+waiting for selector "div.actions > button"
+============================================================
+    at continueForward (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskVideo.actions.ts:23:40)
+    at autodeskVideotask (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskVideo.tasks.ts:13:10)
+    at C:\Users\Emumba\fankave-automation\src\test\content.creationE2E.test.ts:29:24 {
+  name: [32m'Error'[39m
+}

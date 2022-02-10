@@ -1,0 +1,1 @@
+{ msg: [32m'File upload successful'[39m, data: { id: [32m'6897428715131641880'[39m } }

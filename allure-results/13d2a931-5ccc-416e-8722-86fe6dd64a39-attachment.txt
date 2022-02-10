@@ -1,0 +1,9 @@
+page.type: Target closed
+=========================== logs ===========================
+waiting for selector "enterEmail"
+============================================================
+    at enterEmailfeild (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskTweet.actions.ts:10:15)
+    at tweetAutodesk (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskTweet.task.ts:21:9)
+    at C:\Users\Emumba\fankave-automation\src\test\autodeskTweet.test.ts:8:19 {
+  name: [32m'Error'[39m
+}

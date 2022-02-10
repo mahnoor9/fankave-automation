@@ -1,0 +1,9 @@
+locator.innerText: Target closed
+=========================== logs ===========================
+waiting for selector "p.fk-share-message"
+============================================================
+    at postedMessege (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskTweet.actions.ts:23:63)
+    at tweetAutodesk (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskTweet.task.ts:14:15)
+    at C:\Users\Emumba\fankave-automation\src\test\autodeskTweet.test.ts:12:19 {
+  name: [32m'Error'[39m
+}

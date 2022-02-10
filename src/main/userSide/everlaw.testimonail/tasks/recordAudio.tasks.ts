@@ -15,7 +15,3 @@ export async function recordAudio(page: Page) {
     console.log(e)
   }
   }
-  export async function recordVideo(page: Page) {
-   
-
-}

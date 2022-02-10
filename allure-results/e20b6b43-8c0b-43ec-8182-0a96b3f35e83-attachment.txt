@@ -1,0 +1,6 @@
+[Error: ENOENT: no such file or directory, open 'C:\Users\Emumba\fankave-automation\src	estJSONtestdataTest_image.jpg'] {
+  errno: [33m-4058[39m,
+  code: [32m'ENOENT'[39m,
+  syscall: [32m'open'[39m,
+  path: [32m'C:\\Users\\Emumba\\fankave-automation\\src\testJSONtestdataTest_image.jpg'[39m
+}

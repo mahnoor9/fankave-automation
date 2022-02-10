@@ -8,13 +8,13 @@ export async function ClickSignInWithGoogle(page: Page) {
 }
 export async function enterEmail(page: Page) {
 
-    await page.locator(emailField).type('')
+    await page.locator(emailField).type('aisha@fankave.com')
     
 }
 
 export async function enterPassword(page: Page) {
     await page.waitForSelector(passwordField)
-    await page.type(passwordField,'')
+    await page.type(passwordField,'@Fankave2022.')
 }
 export async function pressEnter(page: Page) {
     //await page.waitForFunction(page=> page.keyboard.press('Enter'))
@@ -32,6 +32,6 @@ export async function isLoggedIn(page: Page) {
     
     await page.waitForSelector(userAvatar,{timeout:30000})
     // await page.waitForTimeout(5000)
-  //  return await page.locator(userAvatar).isVisible();
-}
+    // return await page.locator(userAvatar).isVisible();
+} 
 

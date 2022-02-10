@@ -1,7 +1,7 @@
 import { test, expect, Page, chromium, firefox } from '@playwright/test';
 import { googleSignIn } from '../main/adminSide/tasks/adminLogin.tasks';
 import { searchTestimonial } from '../main/adminSide/tasks/adminSearcheverlaw.task';
-import { recordAudio } from '../main/userSide/tasks/recordAudio.tasks';
+import { recordAudio } from '../main/userSide/everlaw.testimonail/tasks/recordAudio.tasks';
 import { recordVideo } from '../main/userSide/everlaw.testimonail/tasks/recordVideo.task';
 // import data from "../test/JSONtestdata/"
 let createdAudioID = ''

@@ -1,0 +1,9 @@
+locator.click: Target closed
+=========================== logs ===========================
+waiting for selector "div.fk-widget-icon.fk-image-capture-icon"
+============================================================
+    at takePhoto (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskPhoto.actions.ts:12:37)
+    at autodeskPhototask (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskPhoto.tasks.ts:6:10)
+    at C:\Users\Emumba\fankave-automation\src\test\content.creationE2E.test.ts:18:30 {
+  name: [32m'Error'[39m
+}

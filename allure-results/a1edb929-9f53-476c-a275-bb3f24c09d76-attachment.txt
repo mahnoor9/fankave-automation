@@ -1,0 +1,9 @@
+page.waitForSelector: Target closed
+=========================== logs ===========================
+waiting for selector "div.appcontainer" to be visible
+============================================================
+    at clearSearchField (C:\Users\Emumba\fankave-automation\src\main\adminSide\actions\adminSearch.actions.ts:5:16)
+    at searchautodesk (C:\Users\Emumba\fankave-automation\src\main\adminSide\tasks\adminSearchautodesk.actions.ts:8:15)
+    at C:\Users\Emumba\fankave-automation\src\test\content.creationE2E.test.ts:40:9 {
+  name: [32m'Error'[39m
+}

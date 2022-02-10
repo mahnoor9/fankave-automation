@@ -9,7 +9,7 @@ export async function uploadImage (page: Page) {
     await page.locator(uploadSelect).click()
 }
 export async function uploadFile (page: Page) {
-    //await page.locator(uploadDoc).click()
+    await page.locator(uploadDoc).click()
     await page.setInputFiles(uploadDoc, filepath)
 }
 export async function continueForward(page: Page) {

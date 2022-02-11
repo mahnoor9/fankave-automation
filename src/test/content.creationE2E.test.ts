@@ -1,7 +1,6 @@
 import { test, expect, Page, chromium, firefox } from '@playwright/test';
 import { googleSignIn } from '../main/adminSide/tasks/adminLogin.tasks';
 import { searchautodesk } from '../main/adminSide/tasks/adminSearchautodesk.actions';
-import { recordAudio } from '../main/userSide/tasks/recordAudio.tasks';
 import { autodeskPhototask } from '../main/userSide/content.creation/tasks/autodeskPhoto.tasks';
 import { autodeskUploadtask } from '../main/userSide/content.creation/tasks/autodeskUpload.tasks';
 import { autodeskVideotask } from '../main/userSide/content.creation/tasks/autodeskVideo.tasks';

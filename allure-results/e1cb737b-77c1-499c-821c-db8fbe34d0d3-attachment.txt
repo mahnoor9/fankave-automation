@@ -1,0 +1,9 @@
+locator.click: Target closed
+=========================== logs ===========================
+waiting for selector "div.fk-widget-icon.fk-video-capture-icon"
+============================================================
+    at recordVideo (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskVideo.actions.ts:13:37)
+    at autodeskVideotask (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskVideo.tasks.ts:7:11)
+    at C:\Users\Emumba\fankave-automation\src\test\socials.tweet.test.ts:24:8 {
+  name: [32m'Error'[39m
+}

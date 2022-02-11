@@ -1,12 +1,12 @@
 import type { Page } from "@playwright/test";
 import {
- selectVideo,
- captureButton,
- stopcaptureButton,
- continueButton,
- enterName,
- enterEmail,
- approveButton,
+    selectVideo,
+    captureButton,
+    stopcaptureButton,
+    continueButton,
+    enterName,
+    enterEmail,
+    approveButton,
 } from "../locators/autodeskVideo.locators";
 
 export async function recordVideo(page: Page) {
@@ -22,18 +22,18 @@ export async function stopRecording(page: Page) {
 export async function continueForward(page: Page) {
     await page.locator(continueButton).click();
 }
-export async function nameFeild (page: Page) {
+export async function nameFeild(page: Page) {
     await page.locator(enterName).click();
     await page.type("#fk-name", "Saad");
 }
-export async function emailFeild (page: Page) {
+export async function emailFeild(page: Page) {
     await page.locator(enterEmail).click();
     await page.type("#fk-email", "test@emumba.com");
 }
 export async function approveRecording(page: Page) {
-    const [response]= await Promise.all([
+    const [response] = await Promise.all([
         page.waitForResponse(`https://dev.api.fankave.com/cmsx/stories/autodesk/publish`
-           
+
         ),
         page.click(approveButton),
     ]);

@@ -1,11 +1,11 @@
 import type { Page } from "@playwright/test";
 import {
- selectPhoto,
- captureButton,
- continueButton,
- enterName,
- enterEmail,
- approveButton,
+    selectPhoto,
+    captureButton,
+    continueButton,
+    enterName,
+    enterEmail,
+    approveButton,
 } from "../locators/autodeskPhoto.locators";
 
 export async function takePhoto(page: Page) {
@@ -19,18 +19,18 @@ export async function capturePhoto(page: Page) {
 export async function continueForward(page: Page) {
     await page.locator(continueButton).click();
 }
-export async function nameFeild (page: Page) {
+export async function nameFeild(page: Page) {
     await page.locator(enterName).click();
     await page.type("#fk-name", "Saad");
 }
-export async function emailFeild (page: Page) {
+export async function emailFeild(page: Page) {
     await page.locator(enterEmail).click();
     await page.type("#fk-email", "test@emumba.com");
 }
 export async function approvePhoto(page: Page) {
-    const [response]= await Promise.all([
+    const [response] = await Promise.all([
         page.waitForResponse(`https://dev.api.fankave.com/cmsx/stories/autodesk/publish`
-           
+
         ),
         page.click(approveButton),
     ]);

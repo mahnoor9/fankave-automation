@@ -15,7 +15,9 @@
          "test_Upload_AutodeskIT": "npx playwright test autodesk.upload.test.ts && npx allure serve",
          "test_video_AutodeskIT": "npx playwright test autodesk.video.test.ts && npx allure serve",
          "test_social_Twitter_USER_AutodeskIT": "npx playwright test socials.tweet.user.test.ts && npx allure serve",
-         "test_social_Twitter_ADMIN_AutodeskIT": "npx playwright test socials.tweet.admin.test.ts && npx allure serve"
+         "test_social_Twitter_ADMIN_AutodeskIT": "npx playwright test socials.tweet.admin.test.ts && npx allure serve",
+
+    " test_admin_delete_media": "npx playwright test adminDelete.test.ts"
         
   },
 

@@ -13,9 +13,4 @@ export async function recordAudio(page: Page) {
    return await approveRecording(page);}
   catch(e){
     console.log(e)
-  }
-  }
-  export async function recordVideo(page: Page) {
-   
-
-}
+  }};

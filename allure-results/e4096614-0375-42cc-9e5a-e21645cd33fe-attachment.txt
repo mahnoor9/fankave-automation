@@ -1,9 +1,0 @@
-locator.click: Target closed
-=========================== logs ===========================
-waiting for selector "div.actions > button"
-============================================================
-    at continueForward (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskPhoto.actions.ts:22:40)
-    at demoPhototask (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tasks\demoPhoto.tasks.ts:10:11)
-    at C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tests\demoPhoto.test.ts:6:19 {
-  name: [32m'Error'[39m
-}

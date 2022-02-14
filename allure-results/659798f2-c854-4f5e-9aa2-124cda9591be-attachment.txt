@@ -1,6 +1,0 @@
-keyboard.press: Target page, context or browser has been closed
-    at startRecording (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskVideo.actions.ts:16:25)
-    at autodeskVideotask (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskVideo.tasks.ts:9:11)
-    at C:\Users\Emumba\fankave-automation\src\test\socials.tweet.test.ts:24:2 {
-  name: [32m'Error'[39m
-}

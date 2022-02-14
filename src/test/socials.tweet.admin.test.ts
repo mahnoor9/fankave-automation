@@ -10,5 +10,5 @@ test('should tweet the latest media sent by a user from the admin side', async (
     await googleSignIn(page);
     await searchautodesk(page, 'Autodesk IT')
     let autotweet = await tweetAdmin(page);;
-    expect(autotweet.toLowerCase()).toContain("posted on twitter")
+    expect(autotweet.toLowerCase()).toContain("shared on twittersuccess")
 });

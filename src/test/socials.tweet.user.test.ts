@@ -5,8 +5,8 @@ import { autodeskUploadtask } from '../main/userSide/content.creation/tasks/auto
 import { autodeskVideotask } from "../main/userSide/content.creation/tasks/autodeskVideo.tasks";
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
-  });
+  await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
+});
 
 test('Should Capture a Photo and Tweet it', async ({ page }) => {
   await autodeskPhototask(page);
@@ -15,14 +15,14 @@ test('Should Capture a Photo and Tweet it', async ({ page }) => {
 });
 
 test('Should Upload a Photo and Tweet it', async ({ page }) => {
- await autodeskUploadtask(page);
- let autotweet = await tweetAutodesk(page);
- expect(autotweet.toLocaleLowerCase()).toContain("posted on twitter")
+  await autodeskUploadtask(page);
+  let autotweet = await tweetAutodesk(page);
+  expect(autotweet.toLocaleLowerCase()).toContain("posted on twitter")
 });
 
 
 test('Should Capture a Video and Tweet it', async ({ page }) => {
- await autodeskVideotask(page);
- let autotweet = await tweetAutodesk(page);
- expect(autotweet.toLocaleLowerCase()).toContain("posted on twitter")
+  await autodeskVideotask(page);
+  let autotweet = await tweetAutodesk(page);
+  expect(autotweet.toLocaleLowerCase()).toContain("posted on twitter")
 });

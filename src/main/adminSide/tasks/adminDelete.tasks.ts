@@ -4,9 +4,8 @@ import { deleteiconClick, getDataID } from "../actions/adminDelete.actions"
 
 export async function deleteAdmin(page: Page) {
     try {
-        await page.waitForTimeout(1000);
         await deleteiconClick(page);
-        }
+    }
     catch (e) {
         console.log(e)
     }

@@ -1,9 +1,0 @@
-locator.click: Target closed
-=========================== logs ===========================
-waiting for selector "button.fk-filled-button.fk-share-button.fk-twitter-share"
-============================================================
-    at twitterShareclick (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskTweet.actions.ts:5:37)
-    at tweetAutodesk (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskTweet.tasks.ts:9:74)
-    at C:\Users\Emumba\fankave-automation\src\test\socials.tweet.test.ts:25:18 {
-  name: [32m'Error'[39m
-}

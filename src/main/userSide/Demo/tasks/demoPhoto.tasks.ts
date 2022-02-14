@@ -7,14 +7,11 @@ export async function demoPhototask(page: Page) {
     await takePhoto(page)
     await page.waitForTimeout(1000)
     await capturePhoto(page);
-    await page.waitForTimeout(1000)
     await continueForward(page);
-    await page.waitForTimeout(1000)
     await nameFeild(page);
     await emailFeild(page);
     await storyFeild(page);
     await tagsFeild(page);
-    await page.waitForTimeout(1000)
 
     return await approve(page);
   }

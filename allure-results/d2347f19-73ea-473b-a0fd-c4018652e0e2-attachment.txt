@@ -1,7 +1,0 @@
-page.waitForResponse: Page closed
-=========================== logs ===========================
-waiting for response "https://dev.api.fankave.com/cmsx/stories/testimoni…"
-============================================================
-    at approveRecording (C:\Users\Emumba\fankave-automation\src\main\userSide\everlaw.testimonail\actions\recordAudio.actions.ts:24:14)
-    at demorecordAudio (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tasks\demoAudio.tasks.ts:15:17)
-    at C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tests\demoAudio.test.ts:6:17

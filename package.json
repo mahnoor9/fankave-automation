@@ -3,31 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-
     "test": "npx playwright test",
-
-     "test_Photo_Demo": "npx playwright test demoPhoto.test.ts && npx allure serve",
-     "test_Upload_Demo": "npx playwright test demoUpload.test.ts && npx allure serve",
-     "test_Video_Demo": "npx playwright test demoVideo.test.ts && npx allure serve",
-     "test_Audio_Demo": "npx playwright test demoAudio.test.ts && npx allure serve",
-
-
-
-     "test_E2E_Everlaw ": "npx playwright test everlawE2E.test.ts && npx allure serve",
-         "test_Audio_Everlaw" : "npx playwright test everlaw.audio.test.ts && npx allure serve",
-         "test_Video_Everlaw" : "npx playwright test everlaw.video.test.ts && npx allure serve",
-
-    " test_E2E_AutodeskIT ": "npx playwright test content.creationE2E.test.ts && npx allure serve",
-         "test_Photo_AutodeskIT": "npx playwright test autodesk.photo.test.ts && npx allure serve",
-         "test_Upload_AutodeskIT": "npx playwright test autodesk.upload.test.ts && npx allure serve",
-         "test_video_AutodeskIT": "npx playwright test autodesk.video.test.ts && npx allure serve",
-         "test_social_Twitter_USER_AutodeskIT": "npx playwright test socials.tweet.user.test.ts && npx allure serve",
-         "test_social_Twitter_ADMIN_AutodeskIT": "npx playwright test socials.tweet.admin.test.ts && npx allure serve",
-
-    " test_admin_delete_media": "npx playwright test adminDelete.test.ts && npx allure serve"
-
+    "test_Photo_Demo": "npx playwright test demoPhoto.test.ts && npx allure serve",
+    "test_Upload_Demo": "npx playwright test demoUpload.test.ts && npx allure serve",
+    "test_Video_Demo": "npx playwright test demoVideo.test.ts && npx allure serve",
+    "test_Audio_Demo": "npx playwright test demoAudio.test.ts && npx allure serve",
+    "test_E2E_Everlaw ": "npx playwright test everlawE2E.test.ts && npx allure serve",
+    "test_Audio_Everlaw": "npx playwright test everlaw.audio.test.ts && npx allure serve",
+    "test_Video_Everlaw": "npx playwright test everlaw.video.test.ts && npx allure serve",
+    "test_E2E_AutodeskIT ": "npx playwright test content.creationE2E.test.ts && npx allure serve",
+    "test_Photo_AutodeskIT": "npx playwright test autodesk.photo.test.ts && npx allure serve",
+    "test_Upload_AutodeskIT": "npx playwright test autodesk.upload.test.ts && npx allure serve",
+    "test_video_AutodeskIT": "npx playwright test autodesk.video.test.ts && npx allure serve",
+    "test_social_Twitter_USER_AutodeskIT": "npx playwright test socials.tweet.user.test.ts && npx allure serve",
+    "test_social_Twitter_ADMIN_AutodeskIT": "npx playwright test socials.tweet.admin.test.ts && npx allure serve",
+    "test_admin_delete_media": "npx playwright test adminDelete.test.ts && npx allure serve"
   },
-
   "author": "MAH NOOR, SAAD KHAN",
   "license": "ISC",
   "repository": {
@@ -49,5 +40,4 @@
     "allure-commandline": "^2.17.2",
     "experimental-allure-playwright": "^0.0.3"
   }
-
 }

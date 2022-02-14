@@ -1,3 +1,0 @@
-browserContext.waitForEvent: Context closed
-    at tweetAutodesk (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskTweet.tasks.ts:12:53)
-    at C:\Users\Emumba\fankave-automation\src\test\socials.tweet.test.ts:19:18

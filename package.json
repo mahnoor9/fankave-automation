@@ -6,6 +6,13 @@
 
     "test": "npx playwright test",
 
+     "test_Photo_Demo": "npx playwright test demoPhoto.test.ts && npx allure serve",
+     "test_Upload_Demo": "npx playwright test demoUpload.test.ts && npx allure serve",
+     "test_Video_Demo": "npx playwright test demoVideo.test.ts && npx allure serve",
+     "test_Audio_Demo": "npx playwright test demoAudio.test.ts && npx allure serve",
+
+
+
      "test_E2E_Everlaw ": "npx playwright test everlawE2E.test.ts && npx allure serve",
          "test_Audio_Everlaw" : "npx playwright test everlaw.audio.test.ts && npx allure serve",
          "test_Video_Everlaw" : "npx playwright test everlaw.video.test.ts && npx allure serve",
@@ -18,7 +25,7 @@
          "test_social_Twitter_ADMIN_AutodeskIT": "npx playwright test socials.tweet.admin.test.ts && npx allure serve",
 
     " test_admin_delete_media": "npx playwright test adminDelete.test.ts && npx allure serve"
-        
+
   },
 
   "author": "MAH NOOR, SAAD KHAN",

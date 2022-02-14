@@ -1,0 +1,9 @@
+page.click: Target closed
+=========================== logs ===========================
+waiting for selector "button.fk-capture-button"
+============================================================
+    at stopRecording (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\actions\demo.actions.ts:16:16)
+    at demorecordAudio (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tasks\demoAudio.tasks.ts:12:10)
+    at C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tests\demoAudio.test.ts:6:17 {
+  name: [32m'Error'[39m
+}

@@ -6,6 +6,8 @@ import {
     enterName,
     enterEmail,
     approveButton,
+    enterStory,
+    enterTags,
 } from "../locators/autodeskPhoto.locators";
 
 export async function takePhoto(page: Page) {
@@ -27,11 +29,18 @@ export async function emailFeild(page: Page) {
     await page.locator(enterEmail).click();
     await page.type("#fk-email", "test@emumba.com");
 }
+export async function storyFeild(page: Page) {
+    await page.locator(enterStory).click();
+    await page.type("div.fk-story-form", "This is a Test");
+}
+export async function tagsFeild(page: Page) {
+    await page.locator(enterTags).click();
+    await page.type("#fk-hashtags", "TEST");
+    await page.keyboard.press('Space')
+}
 export async function approvePhoto(page: Page) {
     const [response] = await Promise.all([
-        page.waitForResponse(`https://dev.api.fankave.com/cmsx/stories/autodesk/publish`
-
-        ),
+        page.waitForResponse(`https://dev.api.fankave.com/cmsx/stories/autodesk/publish`),
         page.click(approveButton),
     ]);
     console.log(await response.json());

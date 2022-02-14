@@ -1,0 +1,7 @@
+page.waitForResponse: Page closed
+=========================== logs ===========================
+waiting for response "https://dev.api.fankave.com/cmsx/stories/autodesk/…"
+============================================================
+    at approveImage (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskUpload.actions.ts:28:14)
+    at autodeskUploadtask (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tasks\autodeskUpload.tasks.ts:18:18)
+    at C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\tests\autodesk.upload.test.ts:6:19

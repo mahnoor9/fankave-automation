@@ -1,0 +1,6 @@
+keyboard.press: Unknown key: "SPACE"
+    at tagsFeild (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskPhoto.actions.ts:39:25)
+    at demoPhototask (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tasks\demoPhoto.tasks.ts:15:5)
+    at C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tests\demoPhoto.test.ts:6:19 {
+  name: [32m'Error'[39m
+}

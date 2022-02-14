@@ -9,10 +9,11 @@ test('should delete the latest media sent by a user from the admin side', async 
     await page.goto('https://dev.social.fankave.com/admin/login?org=fankave.com');
     await googleSignIn(page);
     await searchforautodesk(page, 'Autodesk IT')
-    await page.waitForTimeout(1500);
+    await page.waitForTimeout(5000);
     let autodelete = await deleteIDget(page);
-    await page.waitForTimeout(1500);
+    await page.waitForTimeout(2000);
     await deleteAdmin(page);
+    await page.waitForTimeout(5000);
     await page.waitForSelector(cards)
     let allIDs = await page.$$eval(cards, inputs => { return inputs.map(input => input.getAttribute('data-key')) });
     console.log(allIDs);

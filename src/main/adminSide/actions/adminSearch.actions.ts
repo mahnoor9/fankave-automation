@@ -26,7 +26,8 @@ export async function getDataIDs(page: Page) {
     await page.waitForSelector(cards)
     dataIDs = await page.$$eval(cards, inputs => { return inputs.map(input => input.getAttribute('data-key')) })
     await page.reload({timeout: 40000 , waitUntil: 'domcontentloaded'})
-    console.log("SFDSFSD",dataIDs)}
+    console.log("SFDSFSD",dataIDs)
+                           }
     return dataIDs
 }
 

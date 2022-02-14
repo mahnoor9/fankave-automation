@@ -1,7 +1,7 @@
 import { test, expect, Page, chromium, firefox } from '@playwright/test';
-import { googleSignIn } from "../tasks/adminLogin.tasks";
-import { searchautodesk } from "../tasks/adminSearchautodesk.actions";
-import { tweetAdmin } from '../tasks/admintwitter.tasks';
+import { googleSignIn } from "../main/adminSide/tasks/adminLogin.tasks";
+import { searchautodesk } from "../main/adminSide/tasks/adminSearchautodesk.actions";
+import { tweetAdmin } from '../main/adminSide/tasks/admintwitter.tasks';
 
 
 test('should tweet the latest media sent by a user from the admin side', async ({ browser }) => {

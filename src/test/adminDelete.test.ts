@@ -14,9 +14,9 @@ test('should delete the latest media sent by a user from the admin side', async 
     await page.waitForTimeout(1500);
     await deleteAdmin(page);
     await page.waitForSelector(cards)
-    let allIDs = await page.$$eval(cards, inputs => { return inputs.map(input => input.getAttribute('data-key')) })
-    // console.log(allIDs);
-    // console.log(autodelete);
-    await expect(expect(allIDs).toContain(autodelete)).toBeFalsy();
+    let allIDs = await page.$$eval(cards, inputs => { return inputs.map(input => input.getAttribute('data-key')) });
+    console.log(allIDs);
+    console.log(autodelete);
+    (expect(allIDs).not.toContain(autodelete))
 
 });

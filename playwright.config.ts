@@ -43,6 +43,6 @@ const config: PlaywrightTestConfig = {
     
       
     }]
-      // ,reporter:[ [ 'experimental-allure-playwright' ],]
+      ,reporter:[ [ 'experimental-allure-playwright' ],]
 };
 export default config;

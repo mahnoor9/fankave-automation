@@ -17,7 +17,7 @@
          "test_social_Twitter_USER_AutodeskIT": "npx playwright test socials.tweet.user.test.ts && npx allure serve",
          "test_social_Twitter_ADMIN_AutodeskIT": "npx playwright test socials.tweet.admin.test.ts && npx allure serve",
 
-    " test_admin_delete_media": "npx playwright test adminDelete.test.ts"
+    " test_admin_delete_media": "npx playwright test adminDelete.test.ts && npx allure serve"
         
   },
 

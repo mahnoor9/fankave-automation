@@ -1,0 +1,9 @@
+page.click: Target closed
+=========================== logs ===========================
+waiting for selector "#Ellipse_2"
+============================================================
+    at startRecording (C:\Users\Emumba\fankave-automation\src\main\userSide\everlaw.testimonail\actions\recordAudio.actions.ts:17:14)
+    at recordAudio (C:\Users\Emumba\fankave-automation\src\main\userSide\everlaw.testimonail\tasks\recordAudio.tasks.ts:9:4)
+    at C:\Users\Emumba\fankave-automation\src\main\userSide\everlaw.testimonail\tests\everlaw.audio.test.ts:6:17 {
+  name: [32m'Error'[39m
+}

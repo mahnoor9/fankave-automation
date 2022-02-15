@@ -4,14 +4,11 @@ import { takePhoto, capturePhoto, continueForward, nameFeild, emailFeild, approv
 export async function autodeskPhototask(page: Page) {
   try {
     await takePhoto(page)
-    await page.waitForTimeout(1000)
     await capturePhoto(page);
     await page.waitForTimeout(1000)
     await continueForward(page);
-    await page.waitForTimeout(1000)
     await nameFeild(page);
     await emailFeild(page);
-    await page.waitForTimeout(1000)
 
     return await approvePhoto(page);
   }

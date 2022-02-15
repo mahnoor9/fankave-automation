@@ -1,37 +1,38 @@
 import { Page } from "@playwright/test";
 import {
-    loginGoogleButton, emailField, passwordField, userAvatar, passwordNext, emailNext
+  loginGoogleButton, emailField, passwordField, userAvatar, passwordNext, emailNext
 } from "../locators/adminLogin.locators"
 
 export async function ClickSignInWithGoogle(page: Page) {
-    await page.locator(loginGoogleButton).click()
+  await page.waitForSelector(loginGoogleButton);
+  await page.locator(loginGoogleButton).click();
 }
 export async function enterEmail(page: Page) {
 
-    await page.locator(emailField).type('aisha@fankave.com')
-    
+  await page.waitForSelector(emailField);
+  await page.locator(emailField).type('');
+
 }
 
 export async function enterPassword(page: Page) {
-    await page.waitForSelector(passwordField)
-    await page.type(passwordField,'@Fankave2022.')
+  await page.waitForSelector(passwordField);
+  await page.type(passwordField, '');
 }
 export async function pressEnter(page: Page) {
-    //await page.waitForFunction(page=> page.keyboard.press('Enter'))
-    await page.keyboard.press('Enter')
+  await page.keyboard.press('Enter');
 }
 export async function clickPasswordNext(page: Page) {
-  await page.locator(passwordNext).click()
- 
+  await page.waitForSelector(passwordNext);
+  await page.locator(passwordNext).click();
+
 }
 export async function clickEmailNext(page: Page) {
-    await page.locator(emailNext).click()
-   
-  }
+  await page.waitForSelector(emailNext);
+  await page.locator(emailNext).click();
+
+}
 export async function isLoggedIn(page: Page) {
-    
-    await page.waitForSelector(userAvatar,{timeout:30000})
-    // await page.waitForTimeout(5000)
-  //  return await page.locator(userAvatar).isVisible();
+
+  await page.waitForSelector(userAvatar, { timeout: 30000 });
 }
 

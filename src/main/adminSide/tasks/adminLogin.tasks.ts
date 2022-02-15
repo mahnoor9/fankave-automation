@@ -10,11 +10,11 @@ export async function googleSignIn(page: Page) {
             context.waitForEvent('page'),
             ClickSignInWithGoogle(page)
         ]);
-        await page1.waitForNavigation({waitUntil:'domcontentloaded'})
+        await page1.waitForNavigation({ waitUntil: 'domcontentloaded' })
         await enterEmail(page1)
         await clickEmailNext(page1)
-         await enterPassword(page1)
-         await clickPasswordNext(page1)
+        await enterPassword(page1)
+        await clickPasswordNext(page1)
         await page.waitForTimeout(10000)
     }
 

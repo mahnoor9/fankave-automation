@@ -5,11 +5,8 @@ import { confrimTweetposted, postButtonClick, twittericonClick, writetweet } fro
 
 export async function tweetAdmin(page: Page) {
     try {
-        await page.waitForTimeout(1000);
         await twittericonClick(page);
-        await page.waitForTimeout(2000);
         await writetweet(page);
-        await page.waitForTimeout(1000);
         let context = await page.context();
         const [page1] = await Promise.all([context.waitForEvent('page'), postButtonClick(page)]);
         await enterEmailfeild(page1)

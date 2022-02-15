@@ -7,4 +7,4 @@ export async function recordVideo(page: Page) {
    await page.waitForTimeout(10000)
    await stopRecording(page);
    return await approveRecording(page);
-  }
+}

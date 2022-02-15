@@ -1,6 +1,7 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      // "type" : "module"
-    },
-   }
+  "compilerOptions": {
+    "module": "commonjs",
+    "resolveJsonModule": true
+    // "type" : "module"
+  },
+}

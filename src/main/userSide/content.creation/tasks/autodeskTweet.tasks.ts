@@ -10,7 +10,6 @@ export async function tweetAutodesk(page: Page) {
         await enterEmailfeild(page1)
         await enterPasswordfeild(page1)
         await authorizeTweet(page1);
-        await page.waitForTimeout(5000);
         let postedtext = await postedMessege(page);
 
         return postedtext;

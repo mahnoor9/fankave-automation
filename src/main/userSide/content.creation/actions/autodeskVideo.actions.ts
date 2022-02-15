@@ -10,23 +10,28 @@ import {
 } from "../locators/autodeskVideo.locators";
 
 export async function recordVideo(page: Page) {
+    await page.waitForSelector(selectVideo)
     await page.locator(selectVideo).click()
 }
 export async function startRecording(page: Page) {
     await page.keyboard.press('Tab')
+    await page.waitForSelector(captureButton)
     await page.locator(captureButton).click()
 }
 export async function stopRecording(page: Page) {
     await page.locator(stopcaptureButton).click();
 }
 export async function continueForward(page: Page) {
+    await page.waitForSelector(continueButton)
     await page.locator(continueButton).click();
 }
 export async function nameFeild(page: Page) {
+    await page.waitForSelector(enterName)
     await page.locator(enterName).click();
     await page.type("#fk-name", "Saad");
 }
 export async function emailFeild(page: Page) {
+    await page.waitForSelector(enterEmail)
     await page.locator(enterEmail).click();
     await page.type("#fk-email", "test@emumba.com");
 }

@@ -1,0 +1,9 @@
+page.waitForSelector: Target closed
+=========================== logs ===========================
+waiting for selector "div.fk-audio-question-position" to be visible
+============================================================
+    at getItrations (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\actions\demovideoTestimonial.actions.ts:45:16)
+    at demovideoTestimonialtask (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tasks\demovideoTestimonial.tasks.ts:9:23)
+    at C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tests\demovideoTestimonial.test.ts:6:17 {
+  name: [32m'Error'[39m
+}

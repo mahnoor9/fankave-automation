@@ -1,0 +1,14 @@
+export let selectaudioTestimonial = 'div.fk-widget-icon.fk-audio-testimonial-icon';
+export let selectvideoTestimonial = 'div.fk-widget-icon.fk-video-testimonial-icon';
+export let audioquestionTally = 'div.fk-audio-question-position';
+export let videoquestionTally = 'div.fk-video-question-position';
+export let startrecordTestimonial = 'button.fk-capture-button';
+export let stoprecordaudioTestimonial = 'button.fk-capture-button';
+export let stoprecordvideoTestimonial = 'button.fk-capture-button.stop-button';
+export let audioQuestion = 'p.fk-audio-question-text';
+export let videoQuestion = 'p.fk-video-question-text';
+export let approveBtn = 'button.fk-filled-button';
+export let rerecord = 'button.fk-retake-button';
+export let enterEmail = 'input.fk-input.fk-email-input';
+export let sendTestimonial = 'span.fk-send-icon-wrapper';
+export let thankyouMessage = 'span.fk-email-success-prompt';

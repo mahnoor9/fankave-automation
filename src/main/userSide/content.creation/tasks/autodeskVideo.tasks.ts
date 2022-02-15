@@ -4,15 +4,12 @@ import { recordVideo, startRecording, stopRecording, continueForward, nameFeild,
 export async function autodeskVideotask(page: Page) {
   try {
     await recordVideo(page)
-    await page.waitForTimeout(1000)
     await startRecording(page);
-    await page.waitForTimeout(5000)
+    await page.waitForTimeout(5000);
     await stopRecording(page);
     await continueForward(page);
-    await page.waitForTimeout(1000)
     await nameFeild(page);
     await emailFeild(page);
-    await page.waitForTimeout(1000)
 
     return await approveRecording(page);
   }

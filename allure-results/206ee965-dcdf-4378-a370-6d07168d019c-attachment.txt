@@ -1,0 +1,9 @@
+page.waitForSelector: Target closed
+=========================== logs ===========================
+waiting for selector "i.icon.icon-twitter" to be visible
+============================================================
+    at twittericonClick (C:\Users\Emumba\fankave-automation\src\main\adminSide\actions\adminTwitter.actions.ts:6:16)
+    at tweetAdmin (C:\Users\Emumba\fankave-automation\src\main\adminSide\tasks\admintwitter.tasks.ts:8:15)
+    at C:\Users\Emumba\fankave-automation\src\test\socials.tweet.admin.test.ts:12:27 {
+  name: [32m'Error'[39m
+}

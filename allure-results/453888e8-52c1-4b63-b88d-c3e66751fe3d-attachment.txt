@@ -1,0 +1,9 @@
+page.waitForSelector: Target closed
+=========================== logs ===========================
+waiting for selector "input.fk-input.fk-email-input" to be visible
+============================================================
+    at emailFeild (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\actions\demoaudioTestimonial.actions.ts:29:16)
+    at demoaudioTestimonialtask (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tasks\demoaudioTestimonial.tasks.ts:20:15)
+    at C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tests\demoaudioTestimonial.test.ts:6:17 {
+  name: [32m'Error'[39m
+}

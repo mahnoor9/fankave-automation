@@ -10,13 +10,13 @@ export async function ClickSignInWithGoogle(page: Page) {
 export async function enterEmail(page: Page) {
 
   await page.waitForSelector(emailField);
-  await page.locator(emailField).type('aisha@fankave.com');
+  await page.locator(emailField).type('');
 
 }
 
 export async function enterPassword(page: Page) {
   await page.waitForSelector(passwordField);
-  await page.type(passwordField, '@Fankave2022.');
+  await page.type(passwordField, '');
 }
 export async function pressEnter(page: Page) {
   await page.keyboard.press('Enter');

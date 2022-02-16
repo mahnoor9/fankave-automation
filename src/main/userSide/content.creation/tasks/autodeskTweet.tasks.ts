@@ -3,7 +3,7 @@ import waitTillHTMLRendered from "../../../utils/waitTillHTMLRendered";
 import { twitterShareclick, enterEmailfeild, enterPasswordfeild, authorizeTweet, postedMessege } from "../actions/autodeskTweet.actions";
 import { tweetButton } from "../locators/autodeskTweet.locators";
 
-export async function tweetAutodesk(page: Page) {
+export async function tweetAuto(page: Page) {
     try {
         let context = await page.context();
         const [page1] = await Promise.all([context.waitForEvent('page'), twitterShareclick(page)]);

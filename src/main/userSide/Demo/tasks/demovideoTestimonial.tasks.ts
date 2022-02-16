@@ -8,7 +8,6 @@ export async function demovideoTestimonialtask(page: Page) {
         
         let i = await getItrations(page);
         let loop = 0;
-;
         do {
         await page.keyboard.press("Tab");
         await page.waitForTimeout(500);

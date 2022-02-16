@@ -31,8 +31,10 @@ export async function emailFeild(page: Page) {
 }
 
 export async function sendRecording(page: Page) {
-    await page.waitForSelector(sendTestimonial);
-    await page.click(sendTestimonial);
+    const [response] = await Promise.all([
+        page.waitForResponse(`https://dev.api.fankave.com/v1.0/cms/content/social`),
+        page.click(sendTestimonial),
+    ]);
 }
 
 export async function thankyouCheck(page: Page) {

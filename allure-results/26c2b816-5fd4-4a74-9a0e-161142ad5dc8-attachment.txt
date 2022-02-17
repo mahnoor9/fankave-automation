@@ -1,0 +1,9 @@
+page.waitForSelector: Target closed
+=========================== logs ===========================
+waiting for selector "button.fk-filled-button.fk-share-button.fk-linkedIn-share" to be visible
+============================================================
+    at linkedinShareclick (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\actions\demoLinkedIn.user.actions.ts:5:16)
+    at linkedinShareAuto (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tasks\demoLinkedin.user.tasks.ts:8:74)
+    at C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tests\demoLinkedin.user.test.ts:19:5 {
+  name: [32m'Error'[39m
+}

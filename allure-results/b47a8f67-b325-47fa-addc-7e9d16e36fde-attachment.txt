@@ -1,0 +1,9 @@
+page.waitForSelector: Target closed
+=========================== logs ===========================
+waiting for selector "div.fk-story-form" to be visible
+============================================================
+    at storyFeild (C:\Users\Emumba\fankave-automation\src\main\userSide\content.creation\actions\autodeskPhoto.actions.ts:38:16)
+    at demoUploadtask (C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tasks\demoUpload.tasks.ts:14:11)
+    at C:\Users\Emumba\fankave-automation\src\main\userSide\Demo\tests\demoLinkedin.user.test.ts:18:5 {
+  name: [32m'Error'[39m
+}

@@ -1,7 +1,7 @@
 import { Page } from "@playwright/test";
 import { getItrations, thankyouCheck, approve, selectaudioclick, sendRecording, startRecording, stopRecording, emailFeild, testimonialQuestion } from "../actions/demoaudioTestimonial.actions"
 
-export async function demoaudioTestimonialtask(page: Page) {
+export async function demoaudioTestimonialtask(page: Page, testEmail) {
     try {
 
         await selectaudioclick(page);
@@ -20,7 +20,7 @@ export async function demoaudioTestimonialtask(page: Page) {
         await approve(page);
         loop++;
         } while (loop < i)
-        await emailFeild(page);
+        await emailFeild(page, testEmail);
         await sendRecording(page);
         let check = await thankyouCheck(page);
         return check

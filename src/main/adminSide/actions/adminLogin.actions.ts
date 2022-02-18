@@ -7,17 +7,17 @@ export async function ClickSignInWithGoogle(page: Page) {
   await page.waitForSelector(loginGoogleButton);
   await page.locator(loginGoogleButton).click();
 }
-export async function enterEmail(page: Page) {
+export async function enterEmail(page: Page, Account) {
 
   await page.waitForSelector(emailField);
-  await page.locator(emailField).type('aisha@fankave.com');
+  await page.locator(emailField).type(Account);
 
 }
-
-export async function enterPassword(page: Page) {
+export async function enterPassword(page: Page, accPassword) {
   await page.waitForSelector(passwordField);
-  await page.type(passwordField, '@Fankave2022.');
+  await page.type(passwordField, accPassword);
 }
+
 export async function pressEnter(page: Page) {
   await page.keyboard.press('Enter');
 }

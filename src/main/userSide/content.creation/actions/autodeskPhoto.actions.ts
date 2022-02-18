@@ -24,25 +24,25 @@ export async function continueForward(page: Page) {
     await page.waitForSelector(continueButton)
     await page.locator(continueButton).click();
 }
-export async function nameFeild(page: Page) {
+export async function nameFeild(page: Page, testName) {
     await page.waitForSelector(enterName)
     await page.locator(enterName).click();
-    await page.type("#fk-name", "Saad");
+    await page.type("#fk-name", testName);
 }
-export async function emailFeild(page: Page) {
+export async function emailFeild(page: Page, testEmail) {
     await page.waitForSelector(enterEmail)
     await page.locator(enterEmail).click();
-    await page.type("#fk-email", "test@emumba.com");
+    await page.type("#fk-email", testEmail);
 }
-export async function storyFeild(page: Page) {
+export async function storyFeild(page: Page, testStory) {
     await page.waitForSelector(enterStory)
     await page.locator(enterStory).click();
-    await page.type("div.fk-story-form", "This is a Test");
+    await page.type("div.fk-story-form", testStory);
 }
-export async function tagsFeild(page: Page) {
+export async function tagsFeild(page: Page, testTag) {
     await page.waitForSelector(enterTags)
     await page.locator(enterTags).click();
-    await page.type("#fk-hashtags", "TEST");
+    await page.type("#fk-hashtags", testTag);
     await page.keyboard.press('Space')
 }
 export async function approvePhoto(page: Page) {

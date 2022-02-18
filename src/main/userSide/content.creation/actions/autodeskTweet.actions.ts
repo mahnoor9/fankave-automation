@@ -1,21 +1,21 @@
 import type { Page, expect } from "@playwright/test";
-import { tweetButton, authorizeappButton, enterEmail, enterPassword, confirmationMessage, thankyoumessage } from "../locators/autodeskTweet.locators";
+import { tweetButton, authorizeappButton, twitterenterEmail, enterPassword, confirmationMessage, thankyoumessage } from "../locators/autodeskTweet.locators";
 
 export async function twitterShareclick(page: Page) {
     await page.waitForSelector(tweetButton);
     await page.locator(tweetButton).click();
 }
 
-export async function enterEmailfeild(page: Page) {
-    await page.waitForSelector(enterEmail);
-    await page.locator(enterEmail).click();
-    await page.locator(enterEmail).type("Test_fank");
+export async function enterEmailfeild(page: Page, twitterAccount) {
+    await page.waitForSelector(twitterenterEmail);
+    await page.locator(twitterenterEmail).click();
+    await page.locator(twitterenterEmail).type(twitterAccount);
 }
 
-export async function enterPasswordfeild(page: Page) {
+export async function enterPasswordfeild(page: Page, twitterPassword) {
     await page.waitForSelector(enterPassword);
     await page.locator(enterPassword).click();
-    await page.locator(enterPassword).type("Test1234")
+    await page.locator(enterPassword).type(twitterPassword)
 }
 
 export async function authorizeTweet(page: Page) {

@@ -3,7 +3,7 @@ import { autodeskPhototask } from '../../../main/userSide/content.creation/tasks
 import { userSide } from '../../JSONtestdata/autodesk.json';
 
 test('Should capture a photo', async ({ page }) => {
-  await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
+  await page.goto(userSide.URL);
   let autoPhoto = await autodeskPhototask(page, userSide.TestName, userSide.TestEmail);
   console.log(autoPhoto)
 });

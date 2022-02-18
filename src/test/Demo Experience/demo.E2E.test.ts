@@ -7,7 +7,8 @@ import { demoPhototask } from '../../main/userSide/Demo/tasks/demoPhoto.tasks';
 import { demoUploadtask } from '../../main/userSide/Demo/tasks/demoUpload.tasks';
 import { demoVideotask } from '../../main/userSide/Demo/tasks/demoVideo.tasks';
 import { demovideoTestimonialtask } from '../../main/userSide/Demo/tasks/demovideoTestimonial.tasks';
-
+import { userSide } from '../JSONtestdata/demo.json'
+import { adminSide } from '../JSONtestdata/demo.json'
 
 let createdAudioTestimonialID = '';
 let createdVideoTestimonialID = '';

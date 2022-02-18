@@ -3,7 +3,7 @@ import { autodeskVideotask } from '../../../main/userSide/content.creation/tasks
 import { userSide } from '../../JSONtestdata/autodesk.json';
 
 test('Should create a video', async ({ page }) => {
-  await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
+  await page.goto(userSide.URL);
   let autoVideo = await autodeskVideotask(page, userSide.TestName, userSide.TestEmail);
   console.log(autoVideo)
 });

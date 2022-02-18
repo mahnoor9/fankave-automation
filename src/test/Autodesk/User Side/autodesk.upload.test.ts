@@ -3,7 +3,7 @@ import { autodeskUploadtask } from '../../../main/userSide/content.creation/task
 import { userSide } from '../../JSONtestdata/autodesk.json';
 
 test('Should Upload a photo', async ({ page }) => {
-  await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
+  await page.goto(userSide.URL);
   let autoImage = await autodeskUploadtask(page, userSide.TestName, userSide.TestEmail);
   console.log(autoImage)
 });

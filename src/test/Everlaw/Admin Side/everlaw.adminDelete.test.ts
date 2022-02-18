@@ -7,7 +7,7 @@ import { adminSide } from '../../JSONtestdata/everlaw.json'
 
 test('should delete the latest media sent by a user from the admin side', async ({ browser }) => {
     let page = await browser.newPage();
-    await page.goto('https://dev.social.fankave.com/admin/login?org=fankave.com');
+    await page.goto(adminSide.URL);
     await googleSignIn(page, adminSide.googleAccount, adminSide.googlePassword);
     await searchforautodesk(page, adminSide.searchTestimonial)
     await page.waitForTimeout(3000);

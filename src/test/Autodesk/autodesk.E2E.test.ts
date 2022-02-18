@@ -12,21 +12,21 @@ let createdVideoID = ''
 let createdUploadID = ''
 
 test('Should capture a photo', async ({ page }) => {
-  await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
+  await page.goto(userSide.URL);
   let autoPhoto: any = await autodeskPhototask(page, userSide.TestName, userSide.TestEmail);
   createdAudioID = autoPhoto.data.id
   console.log(autoPhoto)
 });
 
 test('Should Upload a photo', async ({ page }) => {
-  await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
+  await page.goto(userSide.URL);
   let autoImage: any = await autodeskUploadtask(page, userSide.TestName, userSide.TestEmail);
   createdUploadID = autoImage.data.id
   console.log(autoImage)
 });
 
 test('Should create a video', async ({ page }) => {
-  await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
+  await page.goto(userSide.URL);
   let autoVideo: any = await autodeskVideotask(page, userSide.TestName, userSide.TestEmail);
   createdVideoID = autoVideo.data.id
   console.log(autoVideo)
@@ -34,7 +34,7 @@ test('Should create a video', async ({ page }) => {
 
 test('should recieve the all record from the admin side', async ({ browser }) => {
   let page = await browser.newPage();
-  await page.goto('https://dev.social.fankave.com/admin/login?org=fankave.com');
+  await page.goto(adminSide.URL);
   await googleSignIn(page, adminSide.googleAccount, adminSide.googlePassword);
   let dataIDs =
     await searchFankave(page, adminSide.searchAutodesk)

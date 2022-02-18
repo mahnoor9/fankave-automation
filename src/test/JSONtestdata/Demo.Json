@@ -16,7 +16,9 @@
         "linkedinAccount": "lahoyor941@alfaceti.com",
         "linkedinPassword": "Fankave1223",
         "textTOpost": "Test Post 123",
-        "postMademessage": "posted on linkedin"
+        "postMademessage": "posted on linkedin",
+
+        "thankyouMail": "Thaks for providing your email"
 
     },
     "adminSide": {

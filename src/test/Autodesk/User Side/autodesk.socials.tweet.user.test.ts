@@ -6,7 +6,7 @@ import { autodeskVideotask } from "../../../main/userSide/content.creation/tasks
 import { userSide } from '../../JSONtestdata/autodesk.json';
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
+  await page.goto(userSide.URL);
 });
 
 test('Should Capture a Photo and Tweet it', async ({ page }) => {

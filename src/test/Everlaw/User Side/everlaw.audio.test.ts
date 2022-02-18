@@ -3,7 +3,7 @@ import { recordAudio } from '../../../main/userSide/everlaw.testimonail/tasks/re
 import { userSide } from '../../JSONtestdata/everlaw.json'
 
 test('should add a new audio from the user side', async ({ page }) => {
-  await page.goto('https://dev.ccapps.fankave.com/everlaw/testimonials/');
+  await page.goto(userSide.URL);
   let respone = await recordAudio(page);
   console.log(respone)
 });

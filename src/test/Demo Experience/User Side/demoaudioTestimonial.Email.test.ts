@@ -1,10 +1,10 @@
 import { test, expect, Page, chromium, firefox, request } from '@playwright/test';
 import { generateEmail } from '../../../main/userSide/Demo/actions/demoTestimonial.Email.actions';
 import { demoaudioTestimonialGetEmailIDtask } from '../../../main/userSide/Demo/tasks/demoaudioTestimonial.Email.tasks';
-
+import { userSide } from '../../JSONtestdata/demo.json'
 
 test('should add a new audio from the user side and the IDs should be linked to the User Email', async ({ request, page }) => {
-  await page.goto('https://dev.ccapps.fankave.com/contentcreation/?experience=demo');
+  await page.goto(userSide.URL);
   let ourEmail = await generateEmail(page);
   console.log(ourEmail);
   let response = await demoaudioTestimonialGetEmailIDtask(page, ourEmail);

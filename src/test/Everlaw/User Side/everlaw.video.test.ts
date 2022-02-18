@@ -3,7 +3,7 @@ import { recordVideo } from "../../../main/userSide/everlaw.testimonail/tasks/re
 import { userSide } from '../../JSONtestdata/everlaw.json'
 
 test('should add a new Video from the user side', async ({ page }) => {
-  await page.goto('https://dev.ccapps.fankave.com/everlaw/testimonials/');
+  await page.goto(userSide.URL);
   let recording = await recordVideo(page);
   console.log(recording)
 });

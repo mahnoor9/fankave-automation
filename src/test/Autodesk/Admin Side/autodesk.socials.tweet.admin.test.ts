@@ -6,7 +6,7 @@ import { adminSide } from '../../JSONtestdata/autodesk.json';
 
 test('should tweet the latest media sent by a user from the admin side', async ({ browser }) => {
     let page = await browser.newPage();
-    await page.goto('https://dev.social.fankave.com/admin/login?org=fankave.com');
+    await page.goto(adminSide.URL);
     await googleSignIn(page, adminSide.googleAccount, adminSide.googlePassword);
     await searchFankave(page, adminSide.searchAutodesk)
     let autotweet = await tweetAdmin(page, adminSide.textTOtweet, adminSide.twitterAccount, adminSide.twitterPassword);

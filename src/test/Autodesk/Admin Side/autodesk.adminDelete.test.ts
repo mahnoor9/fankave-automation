@@ -3,12 +3,13 @@ import { searchforautodesk } from '../../../main/adminSide/actions/adminDelete.a
 import { cards } from '../../../main/adminSide/locators/adminSearch.locators';
 import { deleteAdmin, deleteIDget } from '../../../main/adminSide/tasks/adminDelete.tasks';
 import { googleSignIn } from "../../../main/adminSide/tasks/adminLogin.tasks";
+import { adminSide } from '../../JSONtestdata/autodesk.json';
 
 test('should delete the latest media sent by a user from the admin side', async ({ browser }) => {
     let page = await browser.newPage();
     await page.goto('https://dev.social.fankave.com/admin/login?org=fankave.com');
-    await googleSignIn(page, 'aisha@fankave.com', '@Fankave2022.');
-    await searchforautodesk(page, 'Autodesk IT')
+    await googleSignIn(page, adminSide.googleAccount, adminSide.googlePassword);
+    await searchforautodesk(page, adminSide.searchAutodesk)
     await page.waitForTimeout(3000);
     let autodelete = await deleteIDget(page);
     await page.waitForTimeout(2000);

@@ -3,26 +3,27 @@ import { tweetAuto } from '../../../main/userSide/content.creation/tasks/autodes
 import { autodeskPhototask } from "../../../main/userSide/content.creation/tasks/autodeskPhoto.tasks"
 import { autodeskUploadtask } from '../../../main/userSide/content.creation/tasks/autodeskUpload.tasks';
 import { autodeskVideotask } from "../../../main/userSide/content.creation/tasks/autodeskVideo.tasks";
+import { userSide } from '../../JSONtestdata/autodesk.json';
 
 test.beforeEach(async ({ page }) => {
   await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
 });
 
 test('Should Capture a Photo and Tweet it', async ({ page }) => {
-  await autodeskPhototask(page, "tester", "test@emumba.com" );
-  let autotweet = await tweetAuto(page, "Test_Fank", "Test1234");
-  expect(autotweet.toLocaleLowerCase()).toContain("posted on twitter")
+  await autodeskPhototask(page, userSide.TestName, userSide.TestEmail);
+  let autotweet = await tweetAuto(page, userSide.twitterAccount, userSide.twitterPassword);
+  expect(autotweet.toLocaleLowerCase()).toContain(userSide.tweetPostedmessage)
 });
 
 test('Should Upload a Photo and Tweet it', async ({ page }) => {
-  await autodeskUploadtask(page, "tester", "test@emumba.com");
-  let autotweet = await tweetAuto(page, "Test_Fank", "Test1234");
-  expect(autotweet.toLocaleLowerCase()).toContain("posted on twitter")
+  await autodeskUploadtask(page, userSide.TestName, userSide.TestEmail);
+  let autotweet = await tweetAuto(page, userSide.twitterAccount, userSide.twitterPassword);
+  expect(autotweet.toLocaleLowerCase()).toContain(userSide.tweetPostedmessage)
 });
 
 
 test('Should Capture a Video and Tweet it', async ({ page }) => {
-  await autodeskVideotask(page, "tester", "test@emumba.com");
-  let autotweet = await tweetAuto(page, "Test_Fank", "Test1234");
-  expect(autotweet.toLocaleLowerCase()).toContain("posted on twitter")
+  await autodeskVideotask(page, userSide.TestName, userSide.TestEmail);
+  let autotweet = await tweetAuto(page, userSide.twitterAccount, userSide.twitterPassword);
+  expect(autotweet.toLocaleLowerCase()).toContain(userSide.tweetPostedmessage)
 });

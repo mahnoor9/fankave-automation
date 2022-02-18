@@ -4,7 +4,8 @@ import { searchFankave } from '../../main/adminSide/tasks/adminSearchFankave.act
 import { autodeskPhototask } from '../../main/userSide/content.creation/tasks/autodeskPhoto.tasks';
 import { autodeskUploadtask } from '../../main/userSide/content.creation/tasks/autodeskUpload.tasks';
 import { autodeskVideotask } from '../../main/userSide/content.creation/tasks/autodeskVideo.tasks';
-
+import { adminSide } from '../JSONtestdata/autodesk.json';
+import { userSide } from '../JSONtestdata/autodesk.json';
 
 let createdAudioID = ''
 let createdVideoID = ''
@@ -12,21 +13,21 @@ let createdUploadID = ''
 
 test('Should capture a photo', async ({ page }) => {
   await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
-  let autoPhoto: any = await autodeskPhototask(page, "tester", "test@emumba.com");
+  let autoPhoto: any = await autodeskPhototask(page, userSide.TestName, userSide.TestEmail);
   createdAudioID = autoPhoto.data.id
   console.log(autoPhoto)
 });
 
 test('Should Upload a photo', async ({ page }) => {
   await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
-  let autoImage: any = await autodeskUploadtask(page, "tester", "test@emumba.com");
+  let autoImage: any = await autodeskUploadtask(page, userSide.TestName, userSide.TestEmail);
   createdUploadID = autoImage.data.id
   console.log(autoImage)
 });
 
 test('Should create a video', async ({ page }) => {
   await page.goto('https://dev.ccapps.fankave.com/contentcreation/');
-  let autoVideo: any = await autodeskVideotask(page, "tester", "test@emumba.com");
+  let autoVideo: any = await autodeskVideotask(page, userSide.TestName, userSide.TestEmail);
   createdVideoID = autoVideo.data.id
   console.log(autoVideo)
 });
@@ -34,9 +35,9 @@ test('Should create a video', async ({ page }) => {
 test('should recieve the all record from the admin side', async ({ browser }) => {
   let page = await browser.newPage();
   await page.goto('https://dev.social.fankave.com/admin/login?org=fankave.com');
-  await googleSignIn(page, 'aisha@fankave.com', '@Fankave2022.');
+  await googleSignIn(page, adminSide.googleAccount, adminSide.googlePassword);
   let dataIDs =
-    await searchFankave(page, 'Autodesk IT')
+    await searchFankave(page, adminSide.searchAutodesk)
   console.log(dataIDs)
   expect(dataIDs).toContain(createdAudioID)
   expect(dataIDs).toContain(createdVideoID)

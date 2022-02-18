@@ -4,6 +4,7 @@ import { cards } from '../../../main/adminSide/locators/adminSearch.locators';
 import { deleteAdmin, deleteIDget } from '../../../main/adminSide/tasks/adminDelete.tasks';
 import { googleSignIn } from "../../../main/adminSide/tasks/adminLogin.tasks";
 
+
 test('should delete the latest media sent by a user from the admin side', async ({ browser }) => {
     let page = await browser.newPage();
     await page.goto('https://dev.social.fankave.com/admin/login?org=fankave.com');

@@ -1,12 +1,10 @@
 {
     "userSide": {
 
-        "URL": "https://dev.ccapps.fankave.com/contentcreation/?experience=demo",
-        
+        "URL": "https://dev.ccapps.fankave.com/contentcreation/",
+
         "TestName": "Tester",
         "TestEmail": "Test@emumba.com",
-        "TestStory": "Testing",
-        "TestTag":"TEST",
 
         "twitterAccount": "Test_Fank",
         "twitterPassword": "Test1234",
@@ -26,7 +24,8 @@
         "googleAccount": "aisha@Fankave.com",
         "googlePassword": "@Fankave2022.",
 
-        "searchTestimonial": "Testimonial POC",
+        "searchAutodesk": "Autodesk IT",
+
         "twitterAccount": "Test_Fank",
         "twitterPassword": "Test1234",
         "textTOtweet": "Test Tweet 123",

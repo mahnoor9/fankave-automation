@@ -4,6 +4,7 @@ import { demoPhototask } from '../../../main/userSide/Demo/tasks/demoPhoto.tasks
 import { demoUploadtask } from '../../../main/userSide/Demo/tasks/demoUpload.tasks';
 import { demoVideotask } from '../../../main/userSide/Demo/tasks/demoVideo.tasks';
 
+
 test.beforeEach(async ({ page }) => {
   await page.goto('https://dev.ccapps.fankave.com/contentcreation/?experience=demo');
 });

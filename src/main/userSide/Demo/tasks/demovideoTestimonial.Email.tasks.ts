@@ -21,7 +21,7 @@ export async function demovideoTestimonialGetEmailIDtask(page: Page, emailentry)
         await page.waitForTimeout(500);
         await startRecording(page);
         await testimonialQuestion(page);
-        await page.waitForTimeout(7000);
+        await page.waitForTimeout(13000);
         await stopRecording(page);
         let saveID: any = await approve(page);
         IDsArray.push(saveID.data.id);

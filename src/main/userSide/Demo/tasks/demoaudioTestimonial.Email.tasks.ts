@@ -15,7 +15,7 @@ export async function demoaudioTestimonialGetEmailIDtask(page: Page, emailentry)
         await page.keyboard.press("Tab");
         await startRecording(page);
         await testimonialQuestion(page);
-        await page.waitForTimeout(6000);
+        await page.waitForTimeout(13000);
         await page.keyboard.press("Tab");
         await stopRecording(page);
         let saveID: any = await approve(page);

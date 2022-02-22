@@ -6,7 +6,7 @@ export async function recordAudio(page: Page) {
 
     await selectAudio(page);
     await startRecording(page);
-    await page.waitForTimeout(10000)
+    await page.waitForTimeout(13000)
     await stopRecording(page);
 
     return await approveRecording(page);

@@ -9,7 +9,7 @@ export async function demorecordAudio(page: Page, testName, testEmail, testStory
 
     await selectAudio(page);
     await startRecording(page);
-    await page.waitForTimeout(10000)
+    await page.waitForTimeout(13000)
     await stopRecording(page);
     await continueButton(page);
     await nameFeild(page, testName);

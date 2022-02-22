@@ -16,8 +16,8 @@
     "test_Demo_AudioTestimonial_EmailID": "npx playwright test demoaudioTestimonial.Email.test.ts && npx allure serve",
     "test_Demo_Socials_Twitter_User": "npx playwright test demo.socials.tweet.user.test.ts && npx allure serve",
     "test_Demo_Socials_Twitter_Admin": "npx playwright test demo.socials.tweet.admin.test.ts && npx allure serve",
-    "test_Demo_Socials_LinkedIN_User": "npx playwright test demoLinkedin.user.test.ts",
-    "test_Demo_Socials_LinkedIN_Admin": "npx playwright test demo.socials.linkedin.admin.test.ts",
+    "test_Demo_Socials_LinkedIN_User": "npx playwright test demoLinkedin.user.test.ts && npx allure serve",
+    "test_Demo_Socials_LinkedIN_Admin": "npx playwright test demo.socials.linkedin.admin.test.ts && npx allure serve",
     "test_Demo_Admin_Delete_Media": "npx playwright test demo.adminDelete.test.ts && npx allure serve",
 
     "test_Everlaw_E2E ": "npx playwright test everlawE2E.test.ts && npx allure serve",

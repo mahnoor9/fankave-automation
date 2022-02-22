@@ -27,7 +27,7 @@ test('should add a new Video from the user side', async ({ page }) => {
 test('should recieve the content record from the admin side', async ({ browser }) => {
 
   let page = await browser.newPage();
-  await page.goto(userSide.URL);
+  await page.goto(adminSide.URL);
   await googleSignIn(page, adminSide.googleAccount, adminSide.googlePassword);
   let dataIDs =
     await searchFankave(page, adminSide.searchTestimonial)

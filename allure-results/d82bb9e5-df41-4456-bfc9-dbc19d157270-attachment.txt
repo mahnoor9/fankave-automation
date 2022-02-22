@@ -1,0 +1,9 @@
+page.waitForSelector: Target closed
+=========================== logs ===========================
+waiting for selector "div.xmasonry.board > div:nth-child(1)" to be visible
+============================================================
+    at getDataID (C:\Users\Emumba\fankave-automation\src\main\adminSide\actions\adminDelete.actions.ts:13:16)
+    at deleteIDget (C:\Users\Emumba\fankave-automation\src\main\adminSide\tasks\adminDelete.tasks.ts:17:31)
+    at C:\Users\Emumba\fankave-automation\src\test\Everlaw\Admin Side\everlaw.adminDelete.test.ts:14:22 {
+  name: [32m'Error'[39m
+}

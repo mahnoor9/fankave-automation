@@ -7,7 +7,7 @@ export async function demoVideotask(page: Page, testName, testEmail, testStory, 
   try {
     await recordVideo(page)
     await startRecording(page);
-    await page.waitForTimeout(10000)
+    await page.waitForTimeout(13000)
     await stopRecording(page);
     await continueForward(page);
     await nameFeild(page, testName);

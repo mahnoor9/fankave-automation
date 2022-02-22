@@ -14,7 +14,7 @@ export async function demoaudioTestimonialtask(page: Page, testEmail) {
         await page.waitForTimeout(1000);
         await startRecording(page);
         await testimonialQuestion(page);
-        await page.waitForTimeout(7000);
+        await page.waitForTimeout(13000);
         await page.keyboard.press("Tab");
         await stopRecording(page);
         await approve(page);

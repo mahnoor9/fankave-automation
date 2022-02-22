@@ -1,0 +1,6 @@
+page.waitForNavigation: Navigation failed because page was closed!
+=========================== logs ===========================
+waiting for navigation until "domcontentloaded"
+============================================================
+    at googleSignIn (C:\Users\Emumba\fankave-automation\src\main\adminSide\tasks\adminLogin.tasks.ts:13:21)
+    at C:\Users\Emumba\fankave-automation\src\test\Everlaw\Admin Side\everlaw.adminDelete.test.ts:11:5

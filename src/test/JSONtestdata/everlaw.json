@@ -1,13 +1,15 @@
 {
     "userSide": {
-        "URL": "",
-        "FirstName": "",
-        "LastName": ""
+
+        "URL": "https://dev.ccapps.fankave.com/everlaw/testimonials/"
     },
     "adminSide": {
-        "URL": "",
-        "email": "",
-        "password": "",
-        "searchString": ""
+
+        "URL": "https://dev.social.fankave.com/admin/login?org=fankave.com",
+
+        "googleAccount": "aisha@Fankave.com",
+        "googlePassword": "@Fankave2022.",
+
+        "searchTestimonial": "Testimonial POC"
     }
 }

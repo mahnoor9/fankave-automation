@@ -24,15 +24,17 @@ export async function approve(page: Page) {
     return (await response.json());
 }
 
-export async function emailFeild(page: Page) {
+export async function emailFeild(page: Page, testEmail) {
     await page.waitForSelector(enterEmail);
     await page.locator(enterEmail).click();
-    await page.type("input.fk-input.fk-email-input", "test@emumba.com");
+    await page.type("input.fk-input.fk-email-input", testEmail);
 }
 
 export async function sendRecording(page: Page) {
-    await page.waitForSelector(sendTestimonial);
-    await page.click(sendTestimonial);
+    const [response] = await Promise.all([
+        page.waitForResponse(`https://dev.api.fankave.com/v1.0/cms/content/social`),
+        page.click(sendTestimonial),
+    ]);
 }
 
 export async function thankyouCheck(page: Page) {

@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import { card, confirmtweetpopup, previewBtn, shareBtn, tweeticon, tweettext, } from "../locators/adminTwitter.locators";
+import { card, confirmpopup, previewBtn, shareBtn, tweeticon, tweettext, } from "../locators/adminTwitter.locators";
 
 
 export async function twittericonClick(page: Page) {
@@ -7,9 +7,9 @@ export async function twittericonClick(page: Page) {
     (await page.$(tweeticon)).click();
 };
 
-export async function writetweet(page: Page) {
+export async function writeTesttext(page: Page, TestText) {
     await page.waitForSelector(tweettext);
-    await page.type(tweettext, "Test Tweet");
+    await page.type(tweettext, TestText);
 };
 
 export async function previewButtonClick(page: Page) {
@@ -22,9 +22,9 @@ export async function postButtonClick(page: Page) {
     (await page.$(shareBtn)).click()
 };
 
-export async function confrimTweetposted(page: Page) {
-    await page.waitForSelector(confirmtweetpopup)
-    let checkmessege = await (await page.$(confirmtweetpopup)).textContent();
+export async function confrimposted(page: Page) {
+    await page.waitForSelector(confirmpopup)
+    let checkmessege = await (await page.$(confirmpopup)).textContent();
     console.log(checkmessege)
     return checkmessege;
 };

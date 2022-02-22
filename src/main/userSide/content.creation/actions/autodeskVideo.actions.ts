@@ -25,15 +25,15 @@ export async function continueForward(page: Page) {
     await page.waitForSelector(continueButton)
     await page.locator(continueButton).click();
 }
-export async function nameFeild(page: Page) {
+export async function nameFeild(page: Page, testName) {
     await page.waitForSelector(enterName)
     await page.locator(enterName).click();
-    await page.type("#fk-name", "Saad");
+    await page.type("#fk-name", testName);
 }
-export async function emailFeild(page: Page) {
+export async function emailFeild(page: Page, testEmail) {
     await page.waitForSelector(enterEmail)
     await page.locator(enterEmail).click();
-    await page.type("#fk-email", "test@emumba.com");
+    await page.type("#fk-email", testEmail);
 }
 export async function approveRecording(page: Page) {
     const [response] = await Promise.all([

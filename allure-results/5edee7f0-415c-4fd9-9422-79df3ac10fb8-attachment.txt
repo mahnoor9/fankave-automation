@@ -1,9 +1,0 @@
-page.waitForSelector: Target closed
-=========================== logs ===========================
-waiting for selector "input[name="password"]" to be visible
-============================================================
-    at enterPassword (C:\Users\Emumba\fankave-automation\src\main\adminSide\actions\adminLogin.actions.ts:18:14)
-    at googleSignIn (C:\Users\Emumba\fankave-automation\src\main\adminSide\tasks\adminLogin.tasks.ts:16:15)
-    at C:\Users\Emumba\fankave-automation\src\test\socials.tweet.admin.test.ts:10:5 {
-  name: [32m'Error'[39m
-}

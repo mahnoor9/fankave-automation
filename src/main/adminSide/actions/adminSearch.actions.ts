@@ -5,7 +5,6 @@ export async function clearSearchField(page: Page) {
     await page.waitForSelector(`div.appcontainer`)
     await page.click(searchField)
     let value = await page.$eval(searchField, el => el.getAttribute('value'))
-    console.log(value)
     for (let i = 0; i < value.length; i++) {
         await page.click(searchField)
         await page.keyboard.press('Backspace');

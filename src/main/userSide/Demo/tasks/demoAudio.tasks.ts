@@ -4,18 +4,18 @@ import { selectAudio } from "../../everlaw.testimonail/actions/recordAudio.actio
 import { approve } from "../actions/demo.actions";
 import { startRecording, stopRecording, continueButton } from "../actions/demoAudio.actions";
 
-export async function demorecordAudio(page: Page) {
+export async function demorecordAudio(page: Page, testName, testEmail, testStory, testTag) {
   try {
 
     await selectAudio(page);
     await startRecording(page);
-    await page.waitForTimeout(10000)
+    await page.waitForTimeout(13000)
     await stopRecording(page);
     await continueButton(page);
-    await nameFeild(page);
-    await emailFeild(page);
-    await storyFeild(page);
-    await tagsFeild(page);
+    await nameFeild(page, testName);
+    await emailFeild(page, testEmail);
+    await storyFeild(page, testStory);
+    await tagsFeild(page, testTag);
 
     return await approve(page);
   }

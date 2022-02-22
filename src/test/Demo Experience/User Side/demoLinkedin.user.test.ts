@@ -27,9 +27,3 @@ test.beforeEach(async ({ page }) => {
     let autopost = await linkedinShareAuto(page, userSide.linkedinAccount, userSide.linkedinPassword);
     expect(autopost.toLocaleLowerCase()).toContain(userSide.postMademessage)
   });
-
-  test('Should Record an Audio and Share it on LinkedIN', async ({ page }) => {
-    await demorecordAudio(page, userSide.TestName, userSide.TestEmail, userSide.TestStory, userSide.TestTag);
-    let autopost = await linkedinShareAuto(page, userSide.linkedinAccount, userSide.linkedinPassword);
-    expect(autopost.toLocaleLowerCase()).toContain(userSide.postMademessage)
-  });

@@ -33,7 +33,9 @@
     "test_AutodeskIT_Social_Twitter_Admin": "npx playwright test autodesk.socials.tweet.admin.test.ts && npx allure serve",
     "test_AutodeskIT_Socials_LinkedIN_User": "npx playwright test autodesk.socials.linkedin.user.test.ts && npx allure serve",
     "test_AutodeskIT_Socials_LinkedIN_Admin": "npx playwright test autodesk.socials.linkedin.admin.test.ts && npx allure serve",
-    "test_AutodeskIT_Admin_Delete_Media": "npx playwright test autodesk.adminDelete.test.ts && npx allure serve"
+    "test_AutodeskIT_Admin_Delete_Media": "npx playwright test autodesk.adminDelete.test.ts && npx allure serve",
+
+    "test_Mobile": "npx playwright test testMobile.test.ts"
   },
   "author": "MAH NOOR, SAAD KHAN",
   "license": "ISC",

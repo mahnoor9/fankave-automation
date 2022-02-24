@@ -1,0 +1,10 @@
+page.waitForSelector: Target closed
+=========================== logs ===========================
+waiting for selector "div.board-container > div.popup > div.content" to be visible
+  selector resolved to hidden <div class="content">…</div>
+============================================================
+    at confrimposted (C:\Users\Emumba\fankave-automation\src\main\adminSide\actions\adminTwitter.actions.ts:26:16)
+    at linkedinAdminShare (C:\Users\Emumba\fankave-automation\src\main\adminSide\tasks\adminLinkedin.tasks.ts:18:30)
+    at C:\Users\Emumba\fankave-automation\src\test\Autodesk\Admin Side\autodesk.socials.linkedin.admin.test.ts:12:20 {
+  name: [32m'Error'[39m
+}

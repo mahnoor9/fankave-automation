@@ -37,6 +37,8 @@
         "linkedinAccount": "asample0006@gmail.com",
         "linkedinPassword": "Testing12345",
         "textTOpost": "Test Post 123",
-        "postMademessage": "shared on linkedinsuccess"
+        "postMademessage": "shared on linkedinsuccess",
+
+        "negativeTestData": "0012547822203698"
     }
 }

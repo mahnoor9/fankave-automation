@@ -20,7 +20,7 @@ export async function enterPasswordfeild(page: Page, twitterPassword) {
 
 export async function authorizeTweet(page: Page) {
     await page.waitForSelector(authorizeappButton);
-    await page.locator(authorizeappButton).click();
+    await page.locator(authorizeappButton).click()    
 }
 
 export async function postedMessege(page: Page) {

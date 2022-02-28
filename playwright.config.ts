@@ -24,7 +24,7 @@ const config: PlaywrightTestConfig = {
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -38,15 +38,21 @@ const config: PlaywrightTestConfig = {
   },
   projects: [
 
-    //For a Simulated IPhone Chrome
+    // //For a Simulated IPhone Chrome
     // {
     //   name: 'iPhone 11',
     //   use: {
     //     browserName: 'chromium', permissions: ['microphone', 'camera'], headless: false, ...devices['iPhone 11'], }
     // },
 
+    // //For a Simulated Android Chrome
+    // {
+    //   name: 'Galaxy S8',
+    //   use: {
+    //    browserName: 'chromium', permissions: ['microphone', 'camera'], headless: false, ...devices['Galaxy S8'] }
+    // },
 
-    //For Desktop Windows Chrome
+    // // For Desktop Windows Chrome
     // {
       
     //   name: 'chromium',
@@ -55,7 +61,7 @@ const config: PlaywrightTestConfig = {
     // },
 
 
-    //For Desktop MS Edge
+    // // For Desktop MS Edge
     // {
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Microsoft Edge'], channel: 'msedge', permissions: ['microphone', 'camera'], headless: false, launchOptions: { args: ['--disable-web-security', '--allow-running-insecure-content'] } }
@@ -63,7 +69,7 @@ const config: PlaywrightTestConfig = {
     // },
 
 
-    // For Desktop Windows FireFox
+    //For Desktop Windows FireFox
     {
       
         name: 'firefox',
@@ -72,6 +78,6 @@ const config: PlaywrightTestConfig = {
     }
 
   ]
-  , reporter: [['experimental-allure-playwright'],]
+  // , reporter: [['experimental-allure-playwright'],]
 };
 export default config;

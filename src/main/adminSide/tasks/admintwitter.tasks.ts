@@ -11,12 +11,15 @@ export async function tweetAdmin(page: Page, tweetwords, twitterAccount, twitter
         const [page1] = await Promise.all([context.waitForEvent('page'), postButtonClick(page)]);
         await enterEmailfeild(page1, twitterAccount)
         await enterPasswordfeild(page1, twitterPassword)
-        await authorizeTweet(page1);
-        await page.waitForTimeout(10000);
+        let check = await authorizeTweet(page1);
+        page1.waitForEvent('close')
+        const [response] = await Promise.all([
+        page.waitForResponse(`https://dev.api.fankave.com/sharesocial/tweet`),
+        ])
+        await page.waitForTimeout(5000);
         let checktweet = await confrimposted(page);
-
         console.log(checktweet);
-        return checktweet;
+        return (response.json());
     }
 
     catch (e) {

@@ -4,12 +4,11 @@ import { searchFankave } from "../../../main/adminSide/tasks/adminSearchFankave.
 import { tweetAdmin } from '../../../main/adminSide/tasks/admintwitter.tasks';
 import { adminSide } from '../../JSONtestdata/demo.json'
 
-
 test('should tweet the latest media sent by a user from the admin side', async ({ browser }) => {
     let page = await browser.newPage();
     await page.goto(adminSide.URL);
     await googleSignIn(page, adminSide.googleAccount, adminSide.googlePassword);
     await searchFankave(page, adminSide.searchTestimonial)
     let autotweet = await tweetAdmin(page, adminSide.textTOtweet, adminSide.twitterAccount, adminSide.twitterPassword);;
-    expect(autotweet.toLowerCase()).toContain(adminSide.tweetPostedmessage)
+    expect(autotweet.status).toEqual(200);
 });

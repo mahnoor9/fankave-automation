@@ -10,5 +10,5 @@ test('should tweet the latest media sent by a user from the admin side', async (
     await googleSignIn(page, adminSide.googleAccount, adminSide.googlePassword);
     await searchFankave(page, adminSide.searchAutodesk)
     let autotweet = await tweetAdmin(page, adminSide.textTOtweet, adminSide.twitterAccount, adminSide.twitterPassword);
-    expect(autotweet.toLowerCase()).toContain(adminSide.tweetPostedmessage)
+    expect(autotweet.status).toEqual(200);
 });

@@ -29,3 +29,35 @@ export async function demoaudioTestimonialtask(page: Page, testEmail) {
       console.log(e)
     }
   }
+
+  export async function demoaudioTestimonialtaskE2E(page: Page, testEmail) {
+    try {
+
+        await selectaudioclick(page);
+        
+        let i = await getItrations(page);
+        await page.keyboard.press("Tab");
+        let loop = 0;
+        let check = [];
+        let setID: any;
+        do {
+        await page.keyboard.press("Tab");
+        await page.waitForTimeout(1000);
+        await startRecording(page);
+        await testimonialQuestion(page);
+        await page.waitForTimeout(13000);
+        await page.keyboard.press("Tab");
+        await stopRecording(page);
+        setID = await approve(page);
+        check.push(setID.data.id);
+        loop++;
+        } while (loop < i)
+        await emailFeild(page, testEmail);
+        await sendRecording(page);
+        await thankyouCheck(page);
+        return check
+    }
+    catch (e) {
+      console.log(e)
+    }
+  }

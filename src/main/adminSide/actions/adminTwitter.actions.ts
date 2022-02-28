@@ -25,7 +25,6 @@ export async function postButtonClick(page: Page) {
 export async function confrimposted(page: Page) {
     await page.waitForSelector(confirmpopup)
     let checkmessege = await (await page.$(confirmpopup)).textContent();
-    console.log(checkmessege)
     return checkmessege;
 };
 

@@ -30,7 +30,7 @@ test('should recieve the content record from the admin side', async ({ browser }
   await page.goto(adminSide.URL);
   await googleSignIn(page, adminSide.googleAccount, adminSide.googlePassword);
   let dataIDs =
-    await searchFankave(page, adminSide.searchTestimonial)
+  await searchFankave(page, adminSide.searchTestimonial)
   console.log(dataIDs)
   expect(dataIDs).toContain(createdAudioID)
   expect(dataIDs).toContain(createdVideoId)

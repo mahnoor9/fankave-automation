@@ -1,0 +1,9 @@
+page.click: Target closed
+=========================== logs ===========================
+waiting for selector "button.stop-recording-button"
+============================================================
+    at stopRecording (C:\Users\Emumba\fankave-automation\src\main\userSide\everlaw.testimonail\actions\recordAudio.actions.ts:22:16)
+    at recordAudio (C:\Users\Emumba\fankave-automation\src\main\userSide\everlaw.testimonail\tasks\recordAudio.tasks.ts:10:11)
+    at C:\Users\Emumba\fankave-automation\src\test\Everlaw\everlawE2E.test.ts:15:23 {
+  name: [32m'Error'[39m
+}

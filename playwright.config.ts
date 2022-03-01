@@ -52,13 +52,13 @@ const config: PlaywrightTestConfig = {
     //    browserName: 'chromium', permissions: ['microphone', 'camera'], headless: false, ...devices['Galaxy S8'] }
     // },
 
-    // // For Desktop Windows Chrome
-    // {
+    // For Desktop Windows Chrome
+    {
       
-    //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'], permissions: ['microphone', 'camera'], headless: false, launchOptions: { args: ['--disable-web-security', '--allow-running-insecure-content'] } }
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'], permissions: ['microphone', 'camera'], headless: false, launchOptions: { args: ['--disable-web-security', '--allow-running-insecure-content'] } }
 
-    // },
+    },
 
 
     // // For Desktop MS Edge
@@ -70,12 +70,12 @@ const config: PlaywrightTestConfig = {
 
 
     //For Desktop Windows FireFox
-    {
+    // {
       
-        name: 'firefox',
-        use: { ...devices['Desktop Firefox'], headless: false, launchOptions: { firefoxUserPrefs: {'media.navigator.streams.fake':true}, args: ['--disable-web-security', '--allow-running-insecure-content'] } },
+    //     name: 'firefox',
+    //     use: { ...devices['Desktop Firefox'], headless: false, launchOptions: { firefoxUserPrefs: {'media.navigator.streams.fake':true}, args: ['--disable-web-security', '--allow-running-insecure-content'] } },
 
-    }
+    // }
 
   ]
   // , reporter: [['experimental-allure-playwright'],]

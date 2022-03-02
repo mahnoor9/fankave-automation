@@ -3,12 +3,15 @@ var FormData = require('form-data');
 var fs = require('fs');
 var data = new FormData();
 
-export async function sendMedia(){
-
+export async function sendVideo() {
+    
 data.append('hashtags', '[]');
-data.append('author', '{"name":"TT","email":""}');
-data.append('type', 'audio');
-data.append('media', fs.createReadStream('src\\testdata\\85c91875-d532-43fa-bd32-a299ce86a3db.weba'));
+data.append('type', 'video');
+data.append('media', fs.createReadStream('src\\testdata\\testVideofile.mp4'));
+data.append('thumb', fs.createReadStream('src\\testdata\\Test_image.jpg'));
+data.append('width', '320');
+data.append('height', '460');
+data.append('isIOS', 'false');
 
 var config = {
   method: 'post',

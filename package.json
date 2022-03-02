@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test && npx allure serve",
-
     "test_Demo_E2E": "npx playwright test demo.E2E.test.ts && npx allure serve",
     "test_Demo_Photo": "npx playwright test demoPhoto.test.ts && npx allure serve",
     "test_Demo_Upload": "npx playwright test demoUpload.test.ts && npx allure serve",
@@ -19,13 +18,11 @@
     "test_Demo_Socials_LinkedIN_User": "npx playwright test demoLinkedin.user.test.ts && npx allure serve",
     "test_Demo_Socials_LinkedIN_Admin": "npx playwright test demo.socials.linkedin.admin.test.ts && npx allure serve",
     "test_Demo_Admin_Delete_Media": "npx playwright test demo.adminDelete.test.ts && npx allure serve",
-
+    "test_Admin_Transcribe_Audio": "npx playwright test demo.adminTranscribe.test.ts",
     "test_Everlaw_E2E ": "npx playwright test everlawE2E.test.ts && npx allure serve",
     "test_Everlaw_Audio": "npx playwright test everlaw.audio.test.ts && npx allure serve",
     "test_Everlaw_Video": "npx playwright test everlaw.video.test.ts && npx allure serve",
     "test_Everlaw_Admin_Delete_Media": "npx playwright test everlaw.adminDelete.test.ts && npx allure serve",
-    "test_Everlaw_Admin_Transcribe_Audio": "npx playwright test demo.adminTranscribe.test.ts",
-
     "test_AutodeskIT_E2E": "npx playwright test autodesk.E2E.test.ts && npx allure serve",
     "test_AutodeskIT_Photo": "npx playwright test autodesk.photo.test.ts && npx allure serve",
     "test_AutodeskIT_Upload": "npx playwright test autodesk.upload.test.ts && npx allure serve",
@@ -35,7 +32,6 @@
     "test_AutodeskIT_Socials_LinkedIN_User": "npx playwright test autodesk.socials.linkedin.user.test.ts && npx allure serve",
     "test_AutodeskIT_Socials_LinkedIN_Admin": "npx playwright test autodesk.socials.linkedin.admin.test.ts && npx allure serve",
     "test_AutodeskIT_Admin_Delete_Media": "npx playwright test autodesk.adminDelete.test.ts && npx allure serve",
-
     "test_Mobile": "npx playwright test testMobile.test.ts"
   },
   "author": "MAH NOOR, SAAD KHAN",
@@ -52,11 +48,16 @@
   "description": "",
   "dependencies": {
     "@playwright/test": "^1.18.1",
+    "@types/formdata": "^0.10.1",
     "@types/jest": "^27.4.0",
+    "axios": "^0.26.0",
+    "form-data": "^4.0.0",
     "playwright": "^1.18.1"
   },
   "devDependencies": {
     "allure-commandline": "^2.17.2",
-    "experimental-allure-playwright": "^0.0.3"
+    "experimental-allure-playwright": "^0.0.3",
+    "ts-node": "^10.6.0",
+    "typescript": "^4.6.2"
   }
 }

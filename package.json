@@ -20,6 +20,7 @@
     "test_Demo_Admin_Delete_Media": "npx playwright test demo.adminDelete.test.ts && npx allure serve",
     "test_Demo_Admin_Transcribe_Audio": "npx playwright test demo.adminTranscribeAudio.test.ts",
     "test_Demo_Admin_Transcribe_Video": "npx playwright test demo.adminTranscribeVideo.test.ts",
+    "test_Demo_Admin_Edit_Transcribed_test": "npx playwright test demo.adminEditTranscribedText.test.ts",
     "test_Everlaw_E2E ": "npx playwright test everlawE2E.test.ts && npx allure serve",
     "test_Everlaw_Audio": "npx playwright test everlaw.audio.test.ts && npx allure serve",
     "test_Everlaw_Video": "npx playwright test everlaw.video.test.ts && npx allure serve",
